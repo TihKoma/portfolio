@@ -1,0 +1,36 @@
+#form
+{
+	width: 700px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+#column_teacher
+{
+	width: 400px;
+}
+
+#column_student
+{
+	width: 300px;
+}
+
+.select
+{
+	float: left;
+	margin-left: 20px;
+	margin-top: 3px;
+	vertical-align: middle;
+	height: 20px;
+	/*margin: auto 30px;*/
+}
+
+.add
+{
+	float: left;
+	margin-top: 3px;
+	margin-left: 10px;
+	cursor: pointer;
+	/*border: 1px solid black;*/
+	/*vertical-align: middle;*/
+}

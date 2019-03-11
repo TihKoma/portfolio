@@ -1,0 +1,222 @@
+body
+{
+	margin: 0;
+	background-image: url('../img/kupola.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#journal
+{
+	border: 1px solid black;
+	width: 850px;
+	min-height: 350px;
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+#journal_table
+{
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#save, #save2, #save_homework, #save_comment
+{
+	color: white;
+	background-color: #0672FF;
+	border-radius: 15px;
+	margin: 30px auto;
+	border: 1px solid blue;
+	width: 80px;
+	text-align: center;
+	height: 22px;
+	vertical-align: middle;
+	/*font-size: 20px;*/
+	padding-top: 2px;
+	cursor: pointer;
+}
+
+#save:hover, #save2:hover, #save_homework:hover, #save_comment:hover{
+	border: 1px solid black;
+}
+
+#elem_year
+{
+	float: right;
+	margin-right: 30px;
+	border-bottom: 1px solid black;
+}
+
+.scroll
+{
+	width: 50%;
+	height: 24px;
+	margin: 20px auto;
+}
+
+#back
+{
+	float: left;
+}
+
+#next
+{
+	float: right;
+}
+
+#back, #next
+{
+	cursor: pointer;
+}
+
+#homework
+{
+	/*border: 1px solid black;*/
+	width: 850px;
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+#homework_table
+{
+	width: 500px;
+	margin: 20px auto;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+#text_homework
+{
+	width: 500px;
+	max-width: 500px;
+	height: 70px;
+}
+
+#scroll_homework
+{
+	margin: -10px auto;
+}
+
+#back_homework
+{
+	float: left;
+}
+
+#next_homework
+{
+	float: right;
+}
+
+#back_homework, #next_homework
+{
+	cursor: pointer;
+}
+
+#div_comment
+{
+	float: left;
+	width: 150px;
+	/*margin: 30px;*/
+	/*vertical-align: bottom;*/
+	/*position: relative;*/
+	/*bottom: 30px;*/
+	margin-top: 80px;
+	margin-left: -200px;
+	/*margin-bottom: 30px;*/
+}
+
+#new_comment
+{
+	cursor: pointer;
+}
+
+#new_comment:hover
+{
+	text-decoration: underline;
+}
+
+#statistic
+{
+	cursor: pointer;
+	/*display: inline-block;*/
+	/*float: right;*/
+	/*margin-left: 600px;*/
+	/*border: 1px solid black;*/
+}
+
+#statistic:hover
+{
+	text-decoration: underline;
+}
+
+#window
+{
+	border: 1px solid black;
+	width: 500px;
+	height: 400px;
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+	position: absolute;
+	top: -1000px;
+	right: 50%;
+	left: 50%;
+	margin-left: -251px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#form_comment
+{
+	width: 100%;
+	text-align: center;
+}
+
+#content_comment
+{
+	width: 450px;
+	max-width: 450px;
+	height: 100px;
+	max-height: 165px;
+	/*text-align: center;*/
+}
+
+#close
+{
+	float: right;
+	margin-top: 3px;
+	margin-right: 2px;
+	cursor: pointer;
+}
+
+#close_statistic
+{
+	float: right;
+	margin-top: 3px;
+	margin-right: 2px;
+	cursor: pointer;
+}
+
+#content
+{
+	min-height: 850px;
+}
+
+#window_statistics
+{
+	border: 1px solid black;
+	width: 500px;
+	height: 400px;
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+	position: absolute;
+	top: -1000px;
+	right: 50%;
+	left: 50%;
+	margin-left: -251px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

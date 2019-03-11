@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Электронный дневник</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style_index_teacher.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/style_index_admin.css"> -->
+	<script src="js/jquery-1.11.0.js"></script>
+	<script language="javascript" src="js/index_admin.js"></script>
+</head>
+<body>
+
+	<div id="header">
+		<div id="logo">
+			<a href="index_admin.html">
+				<img src="img/logo.png" width="300px">
+			</a>
+		</div>
+
+		<table id="main_menu" border="0">
+			<tr>
+				<td>
+					<a href="index_admin.html" class="main_menu_links" id="selected_link">
+						Школа
+					</a>
+				</td>
+				<td>
+					<a href="settings_admin.html" class="main_menu_links">
+						Настройки
+					</a>
+				</td>
+			</tr>
+		</table>
+
+		<div id="panel" style="max-width: 250px; overflow: auto;">
+			<table>
+				<tr>
+					<td id="fio"></td>
+				</tr>
+				<tr>
+					<td>
+						Статус: Администратор
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">
+						<b id="log_out">
+							Выйти
+						</b>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div id="content">
+		<div id="school">
+			<h3 align="center" id="full_name"></h3>
+			<table id="about_school">
+				<tr>
+					<td>
+						Директор
+					</td>
+					<td id="director"></td>
+				</tr>
+				<tr>
+					<td>
+						Адрес
+					</td>
+					<td id="address"></td>
+				</tr>
+				<tr>
+					<td>
+						Телефон
+					</td>
+					<td id="phone"></td>
+				</tr>
+				<tr>
+					<td>
+						Индекс
+					</td>
+					<td id="index"></td>
+				</tr>
+				<tr>
+					<td>
+						email
+					</td>
+					<td id="email"></td>
+				</tr>
+				<tr>
+					<td>
+						Преподавателей
+					</td>
+					<td id="count_teachers"></td>
+				</tr>
+				<tr>
+					<td>
+						Учеников
+					</td>
+					<td id="count_students"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>

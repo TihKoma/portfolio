@@ -1,0 +1,80 @@
+/*========================================Расписание===================================*/
+
+body
+{
+	margin: 0;
+	background-image: url('../img/study.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#content
+{
+	/*width: 90%;*/
+	/*height: 1730px;*/
+	border: 1px solid black;
+	margin: 0 auto;
+	margin-top: 0;
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+}
+
+#schedule
+{
+	border-collapse: collapse;
+	margin: auto;
+	min-width: 900px;
+	text-align: center;
+}
+
+.days
+{
+	width: 83px;
+}
+
+.weekday
+{
+	transform: rotate(-90deg);
+}
+
+.lesson
+{
+	width: 20px;
+}
+
+.subject_schedule
+{
+	white-space: nowrap;
+	width: 350px;
+}
+
+.cell
+{
+	border-top: 2px solid black;
+}
+
+.another
+{
+	cursor: pointer;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+#next
+{
+	color: white;
+	background-color: #0672FF;
+	border-radius: 15px;
+	margin: 15px auto;
+	border: 1px solid blue;
+	width: 80px;
+	text-align: center;
+	height: 30px;
+	vertical-align: middle;
+	font-size: 20px;
+	padding-top: 2px;
+	cursor: pointer;
+}

@@ -1,0 +1,193 @@
+#content_change
+{
+	/*border: 1px solid black;*/
+	min-width: 200px;
+	max-width: 350px;
+	margin: 50px auto;
+}
+
+.add
+{
+	cursor: pointer;
+	position: relative;
+	font-size: 18px;
+}
+.add:hover
+{
+	text-decoration: underline;
+}
+
+.change_links
+{
+	cursor: pointer;
+	position: relative;
+	font-size: 18px;
+}
+.change_links:hover
+{
+	text-decoration: underline;
+}
+
+#window, #window_schedule, #window_add_student, #window_add_teacher, #window_add_parent, #window_del_student, #window_del_teacher, #window_del_parent
+{
+	border: 1px solid black;
+	width: 500px;
+	height: 300px;
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+	position: absolute;
+	top: -1000px;
+	right: 50%;
+	left: 50%;
+	margin-left: -251px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#close, #close_schedule, #close_add_student, #close_add_teacher, #close_add_parent, #close_del_student, #close_del_teacher, #close_del_parent
+{
+	float: right;
+	margin-top: 3px;
+	margin-right: 2px;
+	cursor: pointer;
+}
+
+#save_information, #next_schedule, #save_schedule, #add_student, #add_teacher, #add_parent, #del_student, #del_teacher, #del_parent
+{
+	color: white;
+	background-color: #0672FF;
+	border-radius: 15px;
+	margin: 30px auto;
+	border: 1px solid blue;
+	width: 80px;
+	text-align: center;
+	height: 22px;
+	vertical-align: middle;
+	/*font-size: 20px;*/
+	padding-top: 2px;
+	cursor: pointer;
+}
+
+#save_information:hover, #next_schedule:hover, #save_schedule:hover, #add_student:hover, #add_teacher:hover, #add_parent:hover; #del_student:hover, #del_teacher:hover, #del_parent:hover
+{
+	border: 1px solid black;
+}
+
+#table_change_information
+{
+	width: 450px;
+	border-collapse: collapse;
+}
+
+.input_information
+{
+	width: 350px;
+}
+
+#table_schedule
+{
+	width: 300px;
+	margin: 20px auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#window_schedule
+{
+	height: 180px;
+}
+
+#another
+{
+	cursor: pointer;
+}
+
+#another:hover
+{
+	text-decoration: underline;
+}
+
+#table_add_student
+{
+	width: 90%;
+	margin: 20px auto;
+}
+#table_add_student input
+{
+	width: 300px;
+}
+
+.classes
+{
+	width: 260px;
+	height: 108px;
+	/*padding: 0;*/
+	/*max-width: 200px;*/
+}
+
+.select
+{
+	float: left;
+	margin-left: 20px;
+	margin-top: 3px;
+	vertical-align: top;
+	height: 20px;
+	/*margin: auto 30px;*/
+}
+
+.add_class
+{
+	float: left;
+	margin-top: 3px;
+	margin-left: 10px;
+	cursor: pointer;
+	/*border: 1px solid black;*/
+	/*vertical-align: middle;*/
+}
+
+#window_add_teacher{
+	width: 500px;
+	height: 365px;
+}
+
+#table_add_teacher
+{
+	width: 460px;
+	margin: 20px auto;
+}
+
+#table_add_teacher input
+{
+	width: 270px;
+}
+
+#another_subject
+{
+	cursor: pointer;
+}
+
+#window_add_parent
+{
+	height: 260px;
+}
+
+#table_add_parent input
+{
+	width: 280px;
+}
+
+.del
+{
+	cursor: pointer;
+	position: relative;
+	font-size: 18px;
+}
+.del:hover
+{
+	text-decoration: underline;
+}
+
+#students_for_del, #teachers_for_del, #parents_for_del
+{
+	margin-left: 100px;
+}

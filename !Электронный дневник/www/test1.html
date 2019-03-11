@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="js/jquery-1.11.0.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style_create_new_school.css">
+	<script language="javascript" src="js/compliance.js"></script>
+</head>
+<body>
+
+	<table id="register" border="1">
+			<tr>
+				<td colspan="4" class="column1">
+					<b>
+						Заполнение данных об учителях
+					</b>
+				</td>
+			</tr>
+
+			<tr>
+				<td rowspan="3" class="number">
+					#1
+				</td>
+
+				<td class="fio">
+					<input type="text" id="surname_teacher_1" class="fio_text" placeholder="Фамилия">
+				</td>
+				
+				<td class="information" id="form_subject">
+					Предмет:
+					<select id="subject_1">
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select> <a id="another">(Другой)</a>
+				</td>
+				<td rowspan="3" id="classes">
+					<!-- <h4 align="center">Классы, где преподает учитель</h4> -->
+					<p align="center" class="text_classes">Классы, где преподает учитель</p>
+					<select class="select" id="teacher_32_select_1">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+					</select>
+					<div class="add" id="1">
+						<img src="img/add.png" height="20px">
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="fio">
+					<input type="text" id="name_teacher_1" class="fio_text" placeholder="Имя">
+				</td>
+
+				<td class="information">
+					Телефон:<input type="text" id="phone_number_teacher_1" class="subject">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="fio">
+					<input type="text" id="middle_name_teacher_1" class="fio_text" placeholder="Отчество">
+				</td>
+
+				<td class="information">
+					email:<input type="text" id="email_teacher_1" class="subject">
+				</td>
+			</tr>
+
+
+
+			<tr>
+				<td rowspan="3" class="number">
+					#2
+				</td>
+
+				<td class="fio">
+					<input type="text" class="fio_text" placeholder="Фамилия">
+				</td>
+				
+				<td class="information" id="form_subject">
+					Предмет:
+					<select>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select> <a id="another">(Указать другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="fio">
+					<input type="text" class="fio_text" placeholder="Имя">
+				</td>
+
+				<td class="information">
+					Телефон: <input type="text" class="subject">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="fio">
+					<input type="text" class="fio_text" placeholder="Отчество">
+				</td>
+
+				<td class="information">
+					email: <input type="text" class="subject">
+				</td>
+			</tr>
+	</table>
+
+<!-- ======================================================= -->
+
+	<table id="table_students" border="1">
+			<tr>
+				<td colspan="5" class="column1">
+					<b>
+						Заполнение данных об учениках
+					</b>
+				</td>
+			</tr>
+
+			<tr>
+				<td rowspan="3" class="number">
+					#1
+				</td>
+
+				<td class="fio">
+					<input type="text" id="surname_student_" class="fio_text" placeholder="Фамилия">
+				</td>
+				
+				<td class="class_number" id="form_subject">
+					Класс № 
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+					</select>
+				</td>
+
+				<td colspan="2">
+					<p align="center">Родители</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="fio">
+					<input type="text" id="name_student_" class="fio_text" placeholder="Имя">
+				</td>
+
+				<td class="information_student">
+					<input type="text" id="phone_number_student_" class="class_number" placeholder="Телефон">
+				</td>
+
+				<td rowspan="2">
+					<input type="text" id="surname_parent_" class="fio_parents" placeholder="Ф.И.О">
+				</td>
+
+				<td rowspan="2">
+					<input type="text" id="surname_parent_" class="fio_parents" placeholder="Ф.И.О">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="fio">
+					<input type="text" id="middle_name_student_" class="fio_text" placeholder="Отчество">
+				</td>
+
+				<td class="information_student">
+					<input type="text" id="address_student_"  class="class_number" placeholder="Домашний адрес">
+				</td>
+			</tr>
+
+
+			<!-- <tr>
+				<td rowspan="3" class="number">
+					#1
+				</td>
+
+				<td class="fio">
+					<input type="text" class="fio_text" placeholder="Фамилия">
+				</td>
+				
+				<td class="information_student" id="form_subject">
+					Класс №  
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="fio">
+					<input type="text" class="fio_text" placeholder="Имя">
+				</td>
+
+				<td class="information_student">
+					<input type="text" class="subject" placeholder="Телефон">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="fio">
+					<input type="text" class="fio_text" placeholder="Отчество">
+				</td>
+
+				<td class="information_student">
+					<input type="text" class="subject" placeholder="Домашний адрес">
+				</td>
+			</tr> -->
+		</table>
+<!-- =================================
+			
+
+		 <input type="file"> -->
+
+		<!-- <div style="margin: 100px auto; width: 400px; height: 130px; border: 1px solid black;">
+			<h2 align="center" style="text-decoration: underline;">
+				Расписание заполнено!
+			</h2> <br>
+			<a href="../index.php" style="float: left; margin-left: 50px;">На главную</a>
+			<a href="autorization.html" style="float: right; margin-right: 50px;">Войти в систему</a>
+		</div> -->
+
+		<!-- <h2 align="center">
+			Укажите классы, в которых преподают учителя
+		</h2>
+
+		<table id="form" border="1">
+			<tr>
+				<td id="column_teacher">
+					<b>
+						<i>
+							Учитель
+						</i>
+					</b>
+				</td>
+				<td id="column_student">
+					<b>
+						<i>
+							Класс
+						</i>
+					</b>
+				</td>
+			</tr>
+			<tr>
+				<td id="teacher_32">
+					Торопова Наталья Семеновна
+				</td>
+				<td style="text-align: left;">
+					<select class="select" id="teacher_32_select_1">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+					</select>
+					<div class="add" id="1">
+						<img src="img/add.png" height="20px">
+					</div>
+				</td>
+			</tr>
+		</table>
+ -->
+		<script type="text/javascript">
+			// window.onload = function() {
+
+				// $('.add').click(function(){
+				// 	var id = +$(this).attr('id');
+				// 	console.log(id);
+				// 	if (id >= 11) return;
+				// 	$(this).before('<select class="select"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option></select>');
+				// 	id += 1;
+				// 	$(this).attr('id', id);
+				// 	if (id == 11) $(this).empty();	
+				// });
+			// }
+		</script>
+
+</body>
+</html>

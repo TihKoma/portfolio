@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Журнал</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style_index_teacher.css">
+	<link rel="stylesheet" type="text/css" href="css/style_journal_teacher.css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script language="javascript" src="js/journal_teacher.js"></script>
+</head>
+<body>
+
+	<div id="header">
+		<div id="logo">
+			<a href="index_teacher.html">
+				<img src="img/logo.png" width="300px">
+			</a>
+		</div>
+
+		<table id="main_menu" border="0">
+			<tr>
+				<td>
+					<a href="index_teacher.html" class="main_menu_links" id="selected_link">
+						Школа
+					</a>
+				</td>
+				<td>
+					<a href="news_teacher.html" class="main_menu_links">
+						Новости
+					</a>
+				</td>
+				<td>
+					<a href="forum_teacher.html" class="main_menu_links">
+						Форум
+					</a>
+				</td>
+			</tr>
+		</table>
+
+		<div id="panel">
+			<table>
+				<tr>
+					<td id="fio"></td>
+				</tr>
+				<tr>
+					<td>
+						Статус: Преподаватель
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Предмет: <i class="subject"></i>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">
+						<b id="log_out">
+							Выйти
+						</b>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div id="content">
+		<div id="left_sidebar">
+			<table id="list" border="0">
+				<tr>
+					<td>
+						<b>
+							Журналы
+						</b>
+					</td>
+				</tr>
+				<!-- <tr>
+					<td style="margin-top: 20px;">
+						1 класс
+					</td>
+				</tr>
+				<tr>
+					<td>
+						2 класс
+					</td>
+				</tr> -->
+			</table>
+		</div>
+
+		<div id="journal">
+			<h3 align="center">
+				Журнал <b id="number_class"></b> класса
+			</h3>
+			<p align="center" style="font-size: 17px;">
+				<i class="subject"></i>
+			</p>
+			<p id="elem_year">
+				Год <w id="year"></w>
+			</p>
+
+			<table id="journal_table" border="1">
+				<tr id="days">
+					<td></td>
+					<!-- <td>
+						08.02
+					</td>
+					<td>
+						10.02
+					</td>
+					<td>
+						12.02
+					</td>
+					<td>
+						08.02
+					</td>
+					<td>
+						10.02
+					</td>
+					<td>
+						12.02
+					</td>
+					<td>
+						10.02
+					</td>
+					<td>
+						12.02
+					</td> -->
+				</tr>
+				<!-- <tr>
+					<td>
+						<select id="12_14point02">
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+				</tr> -->
+				<!-- <tr> -->
+					<!-- <td style="min-width: 200px;">
+						Комашинский Тихон Владимирович
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td style="width: 200px;">
+						Комашинский Тихон Владимирович
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td>
+					<td>
+						<select>
+							<option>...</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+						</select>
+					</td> -->
+				<!-- </tr> -->
+			</table>
+
+			<div class="scroll">
+				<div id="back">
+					<img src="img/back.png">
+				</div>
+				<div id="next">
+					<img src="img/next.png">
+				</div>
+
+				<div id="div_comment">
+					<qwe id="new_comment">
+						Написать замечание
+					</qwe>
+
+					<qwe id="statistic">
+						Статистика успеваемости
+					</qwe>
+				</div>
+			</div>
+
+			<div id="save">
+				Сохранить
+			</div>
+
+			
+
+		</div>
+
+
+		<div id="homework">
+			<h3 align="center">
+				Домашнее задание
+			</h3>
+			<table id="homework_table" border="0">
+				<tr>
+					<td>
+						<qwe id="date"></qwe>
+						<i>(След. занятие)</i>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<textarea id="text_homework"></textarea>
+					</td>
+				</tr>
+			</table>
+			
+			<div id="scroll_homework" class="scroll">
+				<div id="back_homework">
+					<img src="img/back.png">
+				</div>
+				<div id="next_homework">
+					<img src="img/next.png">
+				</div>
+			</div>
+
+			<div id="save_homework">
+				Сохранить
+			</div>
+		</div>
+		
+	</div>
+
+<div id="window" align="center">
+	<div id="close">
+		<img src="img/cross.png" width="30px">
+	</div>
+	<h3 align="center">
+		Новое замечание
+	</h3>
+	<table id="form_comment" border="0">
+		<tr>
+			<td>
+				Дата
+			</td>
+			<td>
+				<select id="dates_for_comment"></select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Ученик
+			</td>
+			<td>
+				<select id="fio_students"></select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<p align="center">
+					<b>
+						<i>
+							Замечание
+						</i>
+					</b>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align: center;">
+				<textarea id="content_comment"></textarea>
+			</td>
+		</tr>
+	</table>
+	<div id="save_comment">
+		Сохранить
+	</div>
+</div>
+
+<div id="window_statistics">
+	<div id="close_statistic">
+		<img src="img/cross.png" width="30px">
+	</div>
+	<h3 align="center">
+		Успеваемость класса(в процентах)
+	</h3>
+	<canvas id="skills" width="300" height="300" style="margin-left: 100px; margin-top: 25px;"></canvas>
+</div>
+
+</body>
+</html>

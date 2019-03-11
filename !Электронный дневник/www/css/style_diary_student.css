@@ -1,0 +1,81 @@
+/*========================================Расписание===================================*/
+
+#content
+{
+	width: 1200px;
+	border: 0px solid;
+}
+
+#schedule
+{
+	border-collapse: collapse;
+	margin: 50px auto;
+	min-width: 700px;
+	/*width: 880px;*/
+	width: 100%;
+	text-align: center;
+}
+
+.days_title
+{
+	width: 30px;
+}
+
+.number_title
+{
+	width: 16px;
+}
+
+.subject_title
+{
+	width: 120px;
+	height: 20px;
+	margin: 0;
+}
+
+.homework_title
+{
+	width: 250px;
+}
+.mark_title
+{
+	width: 30px;
+}
+
+.weekday
+{
+	transform: rotate(-90deg);
+}
+
+.subjects
+{
+	text-align: left;
+	/*font-size: 14px;*/
+}
+
+.homeworks
+{
+	text-align: left;
+}
+
+.scroll
+{
+	width: 50%;
+	height: 24px;
+	margin: 0 auto;
+}
+
+#back_page
+{
+	float: left;
+}
+
+#next_page
+{
+	float: right;
+}
+
+#back_page, #next_page
+{
+	cursor: pointer;
+}

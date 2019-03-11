@@ -1,0 +1,71 @@
+#perfomance
+{
+	width: 400px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#mark_title
+{
+	width: 60px;
+}
+
+.date_title
+{
+	width: 100px;
+}
+
+#comments
+{
+	overflow: scroll;
+	height: 300px;
+	width: 770px;
+	margin: 20px auto;
+}
+
+#div_perfomance
+{
+	overflow: scroll;
+	width: 420px;
+	margin: 20px auto;
+	height: 150px;
+}
+
+#table_comments
+{
+	width: 750px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#familiar
+{
+	/*border: 1px solid black;*/
+	width: 700px;
+	margin: 10px auto;
+	height: 20px;
+}
+
+.scroll
+{
+	width: 700px;
+	margin: 20px auto;
+	height: 23px;
+}
+
+#back_page
+{
+	float: left;
+}
+
+#next_page
+{
+	float: right;
+}
+
+#next_page, #back_page
+{
+	cursor: pointer;
+}

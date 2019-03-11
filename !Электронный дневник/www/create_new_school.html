@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Добавление новой школы</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style_create_new_school.css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script language="javascript" src="js/register.js"></script>
+</head>
+<body>
+
+
+	<div id="content">
+		<a href="index.html" id="back">Вернуться назад</a>
+		<h2 align="center">
+			Регистрация новой школы
+		</h2> <br>
+
+		<h3 align="center">
+			Этап <b>1</b>
+		</h3>
+
+		<form action="" method="post">
+			<table id="register" border="1">
+				<tr>
+					<td class="column1">
+						<p>
+							Название
+						</p>
+					</td>
+					<td>
+						<input type="text" id="full_name" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							Адрес
+						</p>
+					</td>
+					<td>
+						<input type="text" id="addres" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							Индекс
+						</p>
+					</td>
+					<td>
+						<input type="text" id="index" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							email школы
+						</p>
+					</td>
+					<td>
+						<input type="text" id="email" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							Телефон
+						</p>
+					</td>
+					<td>
+						<input type="text" id="phone_number" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td rowspan="3" class="column1" style="height: 100px;">
+						<p>
+							ФИО Директора
+						</p>
+					</td>
+					<td>
+						<input type="text" id="surname_director" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input type="text" id="name_director" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input type="text" id="middle_name_director" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							Количество учителей
+						</p>
+					</td>
+					<td>
+						<input type="text" id="count_teachers" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							Количество учеников
+						</p>
+					</td>
+					<td>
+						<input type="text" id="count_students" class="text">
+					</td>
+				</tr>
+
+				<!-- <tr>
+					<td colspan="2">
+						<p style="text-align: center">
+							<b>
+								Количество учеников
+							</b>
+						</p>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							1 класс
+						</p>
+					</td>
+					<td>
+						<input type="text" id="count_1class" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							2 класс
+						</p>
+					</td>
+					<td>
+						<input type="text" id="count_2class" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							3 класс
+						</p>
+					</td>
+					<td>
+						<input type="text" id="count_3class" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							4 класс
+						</p>
+					</td>
+					<td>
+						<input type="text" id="count_4class" class="text">
+					</td>
+				</tr>
+				<tr>
+					<td class="column1">
+						<p>
+							5 класс
+						</p>
+					</td>
+					<td>
+						<input type="text" id="count_5class" class="text">
+					</td>
+				</tr>
+				<tr>
+					<td class="column1">
+						<p>
+							6 класс
+						</p>
+					</td>
+					<td>
+						<input type="text" id="count_6class" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							7 класс
+						</p>
+					</td>
+					<td>
+						<input type="text" id="count_7class" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							8 класс
+						</p>
+					</td>
+					<td>
+						<input type="text" id="count_8class" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							9 класс
+						</p>
+					</td>
+					<td>
+						<input type="text" id="count_9class" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							10 класс
+						</p>
+					</td>
+					<td>
+						<input type="text" id="count_10class" class="text">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="column1">
+						<p>
+							11 класс
+						</p>
+					</td>
+					<td>
+						<input type="text" id="count_11class" class="text">
+					</td>
+				</tr> -->
+
+
+				<!-- завуч
+				<!-- <tr>
+					<td rowspan="3" class="column1">
+						<p>
+							ФИО Завуча
+						</p>
+					</td>
+					<td>
+						<input type="text" name="surname_head_teacher" class="text">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="name_head_teacher" class="text">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="middle_name_director" class="text">
+					</td>
+				</tr> -->
+			</table>
+
+			<div id="save">
+				Дальше
+			</div>
+		</form> 
+
+	</div>
+
+
+
+	<!-- <table border="1" id="accounts">
+		<tr>
+			<td colspan="3">
+				<h4 align="center" style="height: 10px;">
+					<i>Учителя</i>
+				</h4>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				ФИО
+			</td>
+			<td>
+				Логин
+			</td>
+			<td>
+				Пароль
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Комашинский Тихон Владимирович
+			</td>
+			<td>
+				TihonKo744
+			</td>
+			<td>
+				Ar74jkf9
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="3">
+				<h4 align="center" style="height: 10px;">
+					<i>Ученики</i>
+				</h4>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				ФИО
+			</td>
+			<td>
+				Логин
+			</td>
+			<td>
+				Пароль
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Торопова Наталья Семеновна
+			</td>
+			<td>
+				TihonKo744
+			</td>
+			<td>
+				Ar74jkf9
+			</td>
+		</tr>
+
+	</table> -->
+
+
+	
+
+</body>
+</html>

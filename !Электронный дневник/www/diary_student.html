@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Электронный дневник</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style_index_teacher.css">
+	<link rel="stylesheet" type="text/css" href="css/style_diary_student.css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script language="javascript" src="js/diary_student.js"></script>
+</head>
+<body>
+
+	<div id="header">
+		<div id="logo">
+			<a href="index_student.html">
+				<img src="img/logo.png" width="300px">
+			</a>
+		</div>
+
+		<table id="main_menu" border="0">
+			<tr>
+				<td>
+					<a href="index_student.html" class="main_menu_links" id="selected_link">
+						Школа
+					</a>
+				</td>
+				<td>
+					<a href="news_student.html" class="main_menu_links">
+						Новости
+					</a>
+				</td>
+				<td>
+					<a href="forum_student.html" class="main_menu_links">
+						Форум
+					</a>
+				</td>
+			</tr>
+		</table>
+
+		<div id="panel">
+			<table>
+				<tr>
+					<td id="fio"></td>
+				</tr>
+				<tr>
+					<td>
+						Ученик
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Класс <i id="class_number"></i>
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">
+						<b id="log_out">
+							Выйти
+						</b>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div id="content">
+		<h2 align="center">
+			Дневник
+		</h2>
+
+		<table id="schedule" border="1">
+			<tr>
+				<td class="days_title">
+					Дни
+				</td>
+				<td class="number_title">
+					№
+				</td>
+				<td class="subject_title">
+					Предмет
+				</td>
+				<td class="homework_title">
+					Домашнее задание
+				</td>
+				<td class="mark_title">
+					Оценка
+				</td>
+
+				<td class="days_title">
+					Дни
+				</td>
+				<td class="number_title">
+					№
+				</td>
+				<td class="subject_title">
+					Предмет
+				</td>
+				<td class="homework_title">
+					Домашнее задание
+				</td>
+				<td class="mark_title">
+					Оценка
+				</td>
+			</tr>
+
+			<tr>
+				<td rowspan="8">
+					<p class="weekday">
+						Понедельник <br>
+						<i id="date_1"></i>
+					</p>
+				</td>
+				<td>
+					1
+				</td>
+				<td class="subjects" id="day_1_subject_0"></td>
+				<td id="homework_day_1_subject_0" class="homeworks"></td>
+				<td>
+					<b id="mark_day_1_subject_0"></b>
+				</td>
+
+
+				<td rowspan="8">
+					<p class="weekday">
+						Четверг <br>
+						<i id="date_4"></i>
+					</p>
+				</td>
+				<td>
+					1
+				</td>
+				<td class="subjects" id="day_4_subject_0"></td>
+				<td id="homework_day_4_subject_0"></td>
+				<td>
+					<b id="mark_day_4_subject_0"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					2
+				</td>
+				<td class="subjects" id="day_1_subject_1"></td>
+				<td id="homework_day_1_subject_1" class="homeworks"></td>
+				<td>
+					<b id="mark_day_1_subject_1"></b>
+				</td>
+
+				<td>
+					2
+				</td>
+				<td class="subjects" id="day_4_subject_1"></td>
+				<td id="homework_day_4_subject_1" class="homeworks"></td>
+				<td>
+					<b id="mark_day_4_subject_1"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					3
+				</td>
+				<td class="subjects" id="day_1_subject_2"></td>
+				<td id="homework_day_1_subject_2" class="homeworks"></td>
+				<td>
+					<b id="mark_day_1_subject_2"></b>
+				</td>
+
+				<td>
+					3
+				</td>
+				<td class="subjects" id="day_4_subject_2"></td>
+				<td id="homework_day_4_subject_2" class="homeworks"></td>
+				<td>
+					<b id="mark_day_4_subject_2"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					4
+				</td>
+				<td class="subjects" id="day_1_subject_3"></td>
+				<td id="homework_day_1_subject_3" class="homeworks"></td>
+				<td>
+					<b id="mark_day_1_subject_3"></b>
+				</td>
+
+				<td>
+					4
+				</td>
+				<td class="subjects" id="day_4_subject_3"></td>
+				<td id="homework_day_4_subject_3" class="homeworks"></td>
+				<td>
+					<b id="mark_day_4_subject_3"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					5
+				</td>
+				<td class="subjects" id="day_1_subject_4"></td>
+				<td id="homework_day_1_subject_4" class="homeworks"></td>
+				<td>
+					<b id="mark_day_1_subject_4"></b>
+				</td>
+
+				<td>
+					5
+				</td>
+				<td class="subjects" id="day_4_subject_4"></td>
+				<td id="homework_day_4_subject_4" class="homeworks"></td>
+				<td>
+					<b id="mark_day_4_subject_4"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					6
+				</td>
+				<td class="subjects" id="day_1_subject_5"></td>
+				<td id="homework_day_1_subject_5" class="homeworks"></td>
+				<td>
+					<b id="mark_day_1_subject_5"></b>
+				</td>
+
+				<td>
+					6
+				</td>
+				<td class="subjects" id="day_4_subject_5"></td>
+				<td id="homework_day_4_subject_5" class="homeworks"></td>
+				<td>
+					<b id="mark_day_4_subject_5"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					7
+				</td>
+				<td class="subjects" id="day_1_subject_6"></td>
+				<td id="homework_day_1_subject_6" class="homeworks"></td>
+				<td>
+					<b id="mark_day_1_subject_6"></b>
+				</td>
+
+				<td>
+					7
+				</td>
+				<td class="subjects" id="day_4_subject_6"></td>
+				<td id="homework_day_4_subject_6" class="homeworks"></td>
+				<td>
+					<b id="mark_day_4_subject_6"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					8
+				</td>
+				<td class="subjects" id="day_1_subject_7"></td>
+				<td id="homework_day_1_subject_7" class="homeworks">
+				</td>
+				<td>
+					<b id="mark_day_1_subject_7"></b>
+				</td>
+
+				<td>
+					8
+				</td>
+				<td class="subjects" id="day_4_subject_7"></td>
+				<td id="homework_day_4_subject_7" class="homeworks">
+				</td>
+				<td>
+					<b id="mark_day_4_subject_7"></b>
+				</td>
+			</tr>
+			
+			<!-- ====================================================================== -->
+
+			<tr>
+				<td rowspan="8">
+					<p class="weekday">
+						Вторник <br>
+						<i id="date_2"></i>
+					</p>
+				</td>
+				<td>
+					1
+				</td>
+				<td class="subjects" id="day_2_subject_0"></td>
+				<td id="homework_day_2_subject_0" class="homeworks"></td>
+				<td>
+					<b id="mark_day_2_subject_0"></b>
+				</td>
+
+
+				<td rowspan="8">
+					<p class="weekday">
+						Пятница <br>
+						<i id="date_5"></i>
+					</p>
+				</td>
+				<td>
+					1
+				</td>
+				<td class="subjects" id="day_5_subject_0"></td>
+				<td id="homework_day_5_subject_0"></td>
+				<td>
+					<b id="mark_day_5_subject_0"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					2
+				</td>
+				<td class="subjects" id="day_2_subject_1"></td>
+				<td id="homework_day_2_subject_1" class="homeworks"></td>
+				<td>
+					<b id="mark_day_2_subject_1"></b>
+				</td>
+
+				<td>
+					2
+				</td>
+				<td class="subjects" id="day_5_subject_1"></td>
+				<td id="homework_day_5_subject_1" class="homeworks"></td>
+				<td>
+					<b id="mark_day_5_subject_1"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					3
+				</td>
+				<td class="subjects" id="day_2_subject_2"></td>
+				<td id="homework_day_2_subject_2" class="homeworks"></td>
+				<td>
+					<b id="mark_day_2_subject_2"></b>
+				</td>
+
+				<td>
+					3
+				</td>
+				<td class="subjects" id="day_5_subject_2"></td>
+				<td id="homework_day_5_subject_2" class="homeworks"></td>
+				<td>
+					<b id="mark_day_5_subject_2"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					4
+				</td>
+				<td class="subjects" id="day_2_subject_3"></td>
+				<td id="homework_day_2_subject_3" class="homeworks"></td>
+				<td>
+					<b id="mark_day_2_subject_3"></b>
+				</td>
+
+				<td>
+					4
+				</td>
+				<td class="subjects" id="day_5_subject_3"></td>
+				<td id="homework_day_5_subject_3" class="homeworks"></td>
+				<td>
+					<b id="mark_day_5_subject_3"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					5
+				</td>
+				<td class="subjects" id="day_2_subject_4"></td>
+				<td id="homework_day_2_subject_4" class="homeworks"></td>
+				<td>
+					<b id="mark_day_2_subject_4"></b>
+				</td>
+
+				<td>
+					5
+				</td>
+				<td class="subjects" id="day_5_subject_4"></td>
+				<td id="homework_day_5_subject_4" class="homeworks"></td>
+				<td>
+					<b id="mark_day_5_subject_4"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					6
+				</td>
+				<td class="subjects" id="day_2_subject_5"></td>
+				<td id="homework_day_2_subject_5" class="homeworks"></td>
+				<td>
+					<b id="mark_day_2_subject_5"></b>
+				</td>
+
+				<td>
+					6
+				</td>
+				<td class="subjects" id="day_5_subject_5"></td>
+				<td id="homework_day_5_subject_5" class="homeworks"></td>
+				<td>
+					<b id="mark_day_5_subject_5"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					7
+				</td>
+				<td class="subjects" id="day_2_subject_6"></td>
+				<td id="homework_day_2_subject_6" class="homeworks"></td>
+				<td>
+					<b id="mark_day_2_subject_6"></b>
+				</td>
+
+				<td>
+					7
+				</td>
+				<td class="subjects" id="day_5_subject_6"></td>
+				<td id="homework_day_5_subject_6" class="homeworks"></td>
+				<td>
+					<b id="mark_day_5_subject_6"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					8
+				</td>
+				<td class="subjects" id="day_2_subject_7"></td>
+				<td id="homework_day_2_subject_7" class="homeworks">
+				</td>
+				<td>
+					<b id="mark_day_2_subject_7"></b>
+				</td>
+
+				<td>
+					8
+				</td>
+				<td class="subjects" id="day_5_subject_7"></td>
+				<td id="homework_day_5_subject_7" class="homeworks">
+				</td>
+				<td>
+					<b id="mark_day_5_subject_7"></b>
+				</td>
+			</tr>
+
+			<!-- ======================================================================== -->
+
+			<tr>
+				<td rowspan="8">
+					<p class="weekday">
+						Среда <br>
+						<i id="date_3"></i>
+					</p>
+				</td>
+				<td>
+					1
+				</td>
+				<td class="subjects" id="day_3_subject_0"></td>
+				<td id="homework_day_3_subject_0" class="homeworks"></td>
+				<td>
+					<b id="mark_day_3_subject_0"></b>
+				</td>
+
+
+				<td rowspan="8">
+					<p class="weekday">
+						Суббота <br>
+						<i id="date_6"></i>
+					</p>
+				</td>
+				<td>
+					1
+				</td>
+				<td class="subjects" id="day_6_subject_0"></td>
+				<td id="homework_day_6_subject_0"></td>
+				<td>
+					<b id="mark_day_6_subject_0"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					2
+				</td>
+				<td class="subjects" id="day_3_subject_1"></td>
+				<td id="homework_day_3_subject_1" class="homeworks"></td>
+				<td>
+					<b id="mark_day_3_subject_1"></b>
+				</td>
+
+				<td>
+					2
+				</td>
+				<td class="subjects" id="day_6_subject_1"></td>
+				<td id="homework_day_6_subject_1" class="homeworks"></td>
+				<td>
+					<b id="mark_day_6_subject_1"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					3
+				</td>
+				<td class="subjects" id="day_3_subject_2"></td>
+				<td id="homework_day_3_subject_2" class="homeworks"></td>
+				<td>
+					<b id="mark_day_3_subject_2"></b>
+				</td>
+
+				<td>
+					3
+				</td>
+				<td class="subjects" id="day_6_subject_2"></td>
+				<td id="homework_day_6_subject_2" class="homeworks"></td>
+				<td>
+					<b id="mark_day_6_subject_2"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					4
+				</td>
+				<td class="subjects" id="day_3_subject_3"></td>
+				<td id="homework_day_3_subject_3" class="homeworks"></td>
+				<td>
+					<b id="mark_day_3_subject_3"></b>
+				</td>
+
+				<td>
+					4
+				</td>
+				<td class="subjects" id="day_6_subject_3"></td>
+				<td id="homework_day_6_subject_3" class="homeworks"></td>
+				<td>
+					<b id="mark_day_6_subject_3"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					5
+				</td>
+				<td class="subjects" id="day_3_subject_4"></td>
+				<td id="homework_day_3_subject_4" class="homeworks"></td>
+				<td>
+					<b id="mark_day_3_subject_4"></b>
+				</td>
+
+				<td>
+					5
+				</td>
+				<td class="subjects" id="day_6_subject_4"></td>
+				<td id="homework_day_6_subject_4" class="homeworks"></td>
+				<td>
+					<b id="mark_day_6_subject_4"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					6
+				</td>
+				<td class="subjects" id="day_3_subject_5"></td>
+				<td id="homework_day_3_subject_5" class="homeworks"></td>
+				<td>
+					<b id="mark_day_3_subject_5"></b>
+				</td>
+
+				<td>
+					6
+				</td>
+				<td class="subjects" id="day_6_subject_5"></td>
+				<td id="homework_day_6_subject_5" class="homeworks"></td>
+				<td>
+					<b id="mark_day_6_subject_5"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					7
+				</td>
+				<td class="subjects" id="day_3_subject_6"></td>
+				<td id="homework_day_3_subject_6" class="homeworks"></td>
+				<td>
+					<b id="mark_day_3_subject_6"></b>
+				</td>
+
+				<td>
+					7
+				</td>
+				<td class="subjects" id="day_6_subject_6"></td>
+				<td id="homework_day_6_subject_6" class="homeworks"></td>
+				<td>
+					<b id="mark_day_6_subject_6"></b>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					8
+				</td>
+				<td class="subjects" id="day_3_subject_7"></td>
+				<td id="homework_day_3_subject_7" class="homeworks">
+				</td>
+				<td>
+					<b id="mark_day_3_subject_7"></b>
+				</td>
+
+				<td>
+					8
+				</td>
+				<td class="subjects" id="day_6_subject_7"></td>
+				<td id="homework_day_6_subject_7" class="homeworks">
+				</td>
+				<td>
+					<b id="mark_day_6_subject_7"></b>
+				</td>
+			</tr>
+		</table>
+
+		<div class="scroll">
+			<div id="back_page">
+				<img src="img/back.png">
+			</div>
+			<div id="next_page">
+				<img src="img/next.png">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

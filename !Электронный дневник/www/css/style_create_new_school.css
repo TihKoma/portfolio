@@ -1,0 +1,238 @@
+body
+{
+	margin: 0;
+	background-image: url('../img/study.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#back
+{
+	color: white;
+	text-decoration: none;
+}
+
+#back:hover
+{
+	text-decoration: underline;
+}
+
+#content
+{
+	/*width: 90%;*/
+	height: 1730px;
+	border: 1px solid black;
+	margin: 0 auto;
+	margin-top: 0;
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+}
+
+#content h2
+{
+	text-decoration: underline;
+}
+
+#names
+{
+	float: left;
+	margin-left: 20px;
+	border: 1px solid black;
+	width: 500px;
+	height: 600px;
+	padding-left: 50px;
+}
+
+#names p
+{
+	height: 70px;
+	margin: 0;
+	/*border: 1px solid black;*/
+	text-align: center;
+}
+
+#forms
+{
+	float: left;
+	/*border: 1px solid black;*/
+	width: 500px;
+	height: 600px;
+}
+
+.text
+{
+	width: 300px;
+	margin-left: 100px;
+}
+
+#register
+{
+	width: 1110px;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+#table_students
+{
+	width: 1110px;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+.column1
+{
+	width: 500px;
+	height: 80px;
+	text-align: center;
+}
+
+#save, #save2, #save3, #fill_schedule
+{
+	color: white;
+	background-color: #0672FF;
+	border-radius: 15px;
+	margin: 30px auto;
+	border: 1px solid blue;
+	width: 80px;
+	text-align: center;
+	height: 30px;
+	vertical-align: middle;
+	font-size: 20px;
+	padding-top: 2px;
+	cursor: pointer;
+}
+
+#fill_schedule
+{
+	width: 310px;
+}
+
+/*====================================2 Этап================================*/
+.number
+{
+	height: 90px;
+	width: 60px;
+	text-align: center;
+}
+
+.fio
+{
+	width: 320px;
+	height: 30px;
+	text-align: center;
+}
+
+.information
+{
+	width: 430px;
+	max-width: 440px;
+	height: 30px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.information_student
+{
+	width: 100px;
+	height: 30px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.subject
+{
+	width: 250px;
+	margin-left: 30px;
+}
+
+.another_subject
+{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#another:hover
+{
+	text-decoration: none;
+}
+
+.fio_text
+{
+	width: 300px;
+}
+
+.class_number
+{
+	width: 250px;
+	text-align: center;
+}
+
+.fio_parents
+{
+	width: 225px;
+}
+
+/*========================================3 Этап=======================================*/
+#form
+{
+	width: 700px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+#column_teacher
+{
+	width: 400px;
+}
+
+#column_student
+{
+	width: 300px;
+}
+
+.select
+{
+	float: left;
+	margin-left: 20px;
+	margin-top: 3px;
+	vertical-align: top;
+	height: 20px;
+	/*margin: auto 30px;*/
+}
+
+.add
+{
+	float: left;
+	margin-top: 3px;
+	margin-left: 10px;
+	cursor: pointer;
+	/*border: 1px solid black;*/
+	/*vertical-align: middle;*/
+}
+
+.classes
+{
+	width: 280px;
+	height: 108px;
+	/*padding: 0;*/
+	/*max-width: 200px;*/
+}
+
+.text_classes
+{
+	/*vertical-align: top;*/
+	/*margin-top: 0;*/
+	/*margin-top: -16px;*/
+	position: relative;
+	top: -5px;
+	margin: 0;
+}
+
+#accounts
+{
+	border-collapse: collapse;
+	width: 700px;
+	margin: 50px auto;
+	text-align: center;
+}
+

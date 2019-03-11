@@ -1,0 +1,10 @@
+#diary
+{
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+#diary:hover
+{
+	text-decoration: underline;
+}

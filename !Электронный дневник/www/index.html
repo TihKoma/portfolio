@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<!-- <meta content="charset=text/html; charset=utf-8"> -->
+	<script src="js/jquery-1.11.0.js"></script>
+</head>
+<body>
+	<!-- <div id="header">
+		<h1 align="center">
+			Электронный Дневник
+		</h1> <br>
+		<h2 align="center">
+			Добро пожаловать!
+		</h2>
+	</div>
+
+	<div id="login">
+		<h3>
+			Вход в систему
+		</h3> <br>
+		<form action="" method="post">
+				Логин <br>
+			<input type="text" name="login">
+			<p>
+				Пароль
+			</p>
+			<input type="password" name="password">
+		</form>
+	</div> -->
+
+	<div id="content_header">
+		<div id="header">
+			<h1 align="center">
+				Электронный Дневник (ЭД)
+			</h1>
+		</div>
+		<div id="about">
+			<p>
+				<b style="margin-left:20px;">ЭД</b> — это веб-портал для школ, представляющий
+				единую систему управления информацией для учителей, родителей,
+				учеников и администрации школы с доступом в любом месте, где есть
+				интернет
+			</p>
+		</div>
+	</div>
+	<!-- <hr> -->
+
+	<div id="school">
+		<!-- <h3 align="center">
+			Школы
+		</h3> <br>
+		<div id="list_school">
+			На данный момент школ нет
+		</div> -->
+		<div id="log_in">
+			Войти в систему
+		</div>
+		<a href="create_new_school.html" id="create">Добавить новую школу</a>
+	</div>
+
+	<script type="text/javascript">
+		$('#log_in').click(function() {
+			window.location.href = 'autorization.html';
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/style_schedule.css">
+	<script src="../js/jquery-1.11.0.js"></script>
+	<script language="javascript" src="../js/schedule.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="content">
+		<h3 align="center">
+			Составление расписания
+		</h3>
+
+		<form action="" method="post">
+
+		<table id="schedule" border="1">
+			<tr>
+				<td colspan="6" id="number">
+					<b>
+						<i id="class_number">1</i> класс
+					</b>
+				</td>
+			</tr>
+			<tr>
+				<td class="days">
+					Дни
+				</td>
+				<td class="lesson">
+					№
+				</td>
+				<td class="subject_schedule">
+					Предмет
+				</td>
+				<td class="days">
+					Дни
+				</td>
+				<td class="lesson">
+					№
+				</td>
+				<td class="subject_schedule">
+					Предмет
+				</td>
+			</tr>
+
+			<tr>
+				<td rowspan="8" class="weekday">
+					Понедельник
+				</td>
+				<td>
+					1
+				</td>
+				<!-- =========================================================== -->
+				<td id="cell_1">
+					<select id="monday_subject_1">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="1">(Другой)</a>
+				</td>
+
+				<td rowspan="8">
+					<p class="weekday">
+						Четверг
+					</p>
+				</td>
+				<td>
+					1
+				</td>
+				<td id="cell_25">
+					<select id="thursday_subject_1">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="25">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					2
+				</td>
+				<td id="cell_2">
+					<select id="monday_subject_2">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="2">(Другой)</a>
+				</td>
+
+				<td>
+					2
+				</td>
+				<td id="cell_26">
+					<select id="thursday_subject_2">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="26">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					3
+				</td>
+				<td id="cell_3">
+					<select id="monday_subject_3">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="3">(Другой)</a>
+				</td>
+
+				<td>
+					3
+				</td>
+				<td id="cell_27">
+					<select id="thursday_subject_3">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="27">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					4
+				</td>
+				<td id="cell_4">
+					<select id="monday_subject_4">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="4">(Другой)</a>
+				</td>
+
+				<td>
+					4
+				</td>
+				<td id="cell_28">
+					<select id="thursday_subject_4">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="28">(Другой)</a>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					5
+				</td>
+				<td id="cell_5">
+					<select id="monday_subject_5">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="5">(Другой)</a>
+				</td>
+
+				<td>
+					5
+				</td>
+				<td id="cell_29">
+					<select id="thursday_subject_5">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="29">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					6
+				</td>
+				<td id="cell_6">
+					<select id="monday_subject_6">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="6">(Другой)</a>
+				</td>
+
+				<td>
+					6
+				</td>
+				<td id="cell_30">
+					<select id="thursday_subject_6">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="30">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					7
+				</td>
+				<td id="cell_7">
+					<select id="monday_subject_7">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="7">(Другой)</a>
+				</td>
+
+				<td>
+					7
+				</td>
+				<td id="cell_31">
+					<select id="thursday_subject_7">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="31">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					8
+				</td>
+				<td id="cell_8">
+					<select id="monday_subject_8">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="8">(Другой)</a>
+				</td>
+
+				<td>
+					8
+				</td>
+				<td id="cell_32">
+					<select id="thursday_subject_8">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="32">(Другой)</a>
+				</td>
+			</tr>
+
+<!-- ========================================================================================= -->
+
+
+
+			<tr class="cell">
+				<td rowspan="8" class="weekday">
+					Вторник
+				</td>
+				<td>
+					1
+				</td>
+				<td id="cell_9">
+					<select id="tuesday_subject_1">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="9">(Другой)</a>
+				</td>
+
+				<td rowspan="8">
+					<p class="weekday">
+						Пятница
+					</p>
+				</td>
+				<td>
+					1
+				</td>
+				<td id="cell_33">
+					<select id="friday_subject_1">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="33">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					2
+				</td>
+				<td id="cell_10">
+					<select id="tuesday_subject_2">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="10">(Другой)</a>
+				</td>
+
+				<td>
+					2
+				</td>
+				<td id="cell_34">
+					<select id="friday_subject_2">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="34">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					3
+				</td>
+				<td id="cell_11">
+					<select id="tuesday_subject_3">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="11">(Другой)</a>
+				</td>
+
+				<td>
+					3
+				</td>
+				<td id="cell_35">
+					<select id="friday_subject_3">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="35">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					4
+				</td>
+				<td id="cell_12">
+					<select id="tuesday_subject_4">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="12">(Другой)</a>
+				</td>
+
+				<td>
+					4
+				</td>
+				<td id="cell_36">
+					<select id="friday_subject_4">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="36">(Другой)</a>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					5
+				</td>
+				<td id="cell_13">
+					<select id="tuesday_subject_5">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="13">(Другой)</a>
+				</td>
+
+				<td>
+					5
+				</td>
+				<td id="cell_37">
+					<select id="friday_subject_5">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="37">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					6
+				</td>
+				<td id="cell_14">
+					<select id="tuesday_subject_6">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="14">(Другой)</a>
+				</td>
+
+				<td>
+					6
+				</td>
+				<td id="cell_38">
+					<select id="friday_subject_6">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="38">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					7
+				</td>
+				<td id="cell_15">
+					<select id="tuesday_subject_7">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="15">(Другой)</a>
+				</td>
+
+				<td>
+					7
+				</td>
+				<td id="cell_39">
+					<select id="friday_subject_7">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="39">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					8
+				</td>
+				<td id="cell_16">
+					<select id="tuesday_subject_8">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="16">(Другой)</a>
+				</td>
+
+				<td>
+					8
+				</td>
+				<td id="cell_40">
+					<select id="friday_subject_8">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="40">(Другой)</a>
+				</td>
+			</tr>
+
+
+<!-- ========================================================================================= -->
+
+			<tr class="cell">
+				<td rowspan="8" class="weekday">
+					Среда
+				</td>
+				<td>
+					1
+				</td>
+				<td id="cell_17">
+					<select id="wednesday_subject_1">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="17">(Другой)</a>
+				</td>
+
+				<td rowspan="8">
+					<p class="weekday">
+						Суббота
+					</p>
+				</td>
+				<td>
+					1
+				</td>
+				<td id="cell_41">
+					<select id="saturday_subject_1">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="41">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					2
+				</td>
+				<td id="cell_18">
+					<select id="wednesday_subject_2">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="18">(Другой)</a>
+				</td>
+
+				<td>
+					2
+				</td>
+				<td id="cell_42">
+					<select id="saturday_subject_2">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="42">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					3
+				</td>
+				<td id="cell_19">
+					<select id="wednesday_subject_3">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="19">(Другой)</a>
+				</td>
+
+				<td>
+					3
+				</td>
+				<td id="cell_43">
+					<select id="saturday_subject_3">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="43">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					4
+				</td>
+				<td id="cell_20">
+					<select id="wednesday_subject_4">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="20">(Другой)</a>
+				</td>
+
+				<td>
+					4
+				</td>
+				<td id="cell_44">
+					<select id="saturday_subject_4">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="44">(Другой)</a>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					5
+				</td>
+				<td id="cell_21">
+					<select id="wednesday_subject_5">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="21">(Другой)</a>
+				</td>
+
+				<td>
+					5
+				</td>
+				<td id="cell_45">
+					<select id="saturday_subject_5">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="45">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					6
+				</td>
+				<td id="cell_22">
+					<select id="wednesday_subject_6">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="22">(Другой)</a>
+				</td>
+
+				<td>
+					6
+				</td>
+				<td id="cell_46">
+					<select id="saturday_subject_6">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="46">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					7
+				</td>
+				<td id="cell_23">
+					<select  id="wednesday_subject_7">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="23">(Другой)</a>
+				</td>
+
+				<td>
+					7
+				</td>
+				<td id="cell_47">
+					<select id="saturday_subject_7">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="47">(Другой)</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					8
+				</td>
+				<td id="cell_24">
+					<select id="wednesday_subject_8">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="24">(Другой)</a>
+				</td>
+
+				<td>
+					8
+				</td>
+				<td id="cell_48">
+					<select id="saturday_subject_8">
+						<option>...</option>
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a class="another" id="48">(Другой)</a>
+				</td>
+			</tr>
+		</table>
+
+		
+			<div id="next">
+				Дальше
+			</div>
+		</form>
+
+	</div>
+</body>
+</html>

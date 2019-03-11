@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Электронный дневник</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style_index_teacher.css">
+	<link rel="stylesheet" type="text/css" href="css/style_settings_admin.css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script language="javascript" src="js/settings_admin.js"></script>
+</head>
+<body>
+
+	<div id="header">
+		<div id="logo">
+			<a href="index_admin.html">
+				<img src="img/logo.png" width="300px">
+			</a>
+		</div>
+
+		<table id="main_menu" border="0">
+			<tr>
+				<td>
+					<a href="index_admin.html" class="main_menu_links">
+						Школа
+					</a>
+				</td>
+				<td>
+					<a href="index_admin.html" class="main_menu_links" id="selected_link">
+						Настройки
+					</a>
+				</td>
+			</tr>
+		</table>
+
+		<div id="panel" style="max-width: 250px; overflow: auto;">
+			<table>
+				<tr>
+					<td id="fio"></td>
+				</tr>
+				<tr>
+					<td>
+						Статус: Администратор
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">
+						<b id="log_out">
+							Выйти
+						</b>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div id="content">
+		<div id="content_change">
+			<b id="change_information_school" class="change_links">
+				Изменить данные о школе
+			</b> <br>
+			<b id="change_schedule" class="change_links">
+				Изменить расписание
+			</b> <br>
+			<b>
+				<i>
+					Добавить:
+				</i> 
+			</b>
+			<b id="student" class="add" class="change_links">
+				Ученика
+			</b>
+			<b id="teacher" class="add" class="change_links">
+				Учителя
+			</b>
+			<b id="parent" class="add" class="change_links">
+				Родителя
+			</b>
+			<b>
+				<i>
+					Удалить:
+				</i> 
+			</b>
+			<b id="student1" class="del">
+				Ученика
+			</b>
+			<b id="teacher1" class="del">
+				Учителя
+			</b>
+			<b id="parent1" class="del">
+				Родителя
+			</b>
+		</div>
+	</div>
+
+	<div id="window" align="center">
+		<div id="close">
+			<img src="img/cross.png" width="30px">
+		</div>
+		<h3 align="center">
+			Изменить данные о школе
+		</h3>
+
+		<table id="table_change_information" border="1">
+			<tr>
+				<td style="width: 100px;">
+					Название
+				</td>
+				<td>
+					<input type="text" class="input_information" id="full_name">
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 100px;">
+					Директор
+				</td>
+				<td>
+					<input type="text" class="input_information" id="director">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Адрес
+				</td>
+				<td>
+					<input type="text" class="input_information" id="address">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Телефон
+				</td>
+				<td>
+					<input type="text" class="input_information" id="phone">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Индекс
+				</td>
+				<td>
+					<input type="text" class="input_information"  id="index">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					email
+				</td>
+				<td>
+					<input type="text" class="input_information" id="email">
+				</td>
+			</tr>
+		</table>
+		
+		<div id="save_information">
+			Сохранить
+		</div>
+	</div>
+
+
+	<div id="window_schedule">
+		<div id="close_schedule">
+			<img src="img/cross.png" width="30px">
+		</div>
+		<h3 align="center">
+			Изменить расписание
+		</h3>
+		<table id="table_schedule" border="1">
+			<tr>
+				<td>
+					Класс №
+				</td>
+				<td>
+					<select id="class_number">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					День недели
+				</td>
+				<td>
+					<select id="weekday">
+						<option>Понедельник</option>
+						<option>Вторник</option>
+						<option>Среда</option>
+						<option>Четверг</option>
+						<option>Пятница</option>
+						<option>Суббота</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+
+		<div id="next_schedule">
+			Дальше
+		</div>
+	</div>
+
+	<div id="window_add_student">
+		<div id="close_add_student">
+			<img src="img/cross.png" width="30px">
+		</div>
+		<h3 align="center">
+			Добавить ученика
+		</h3>
+
+		<table id="table_add_student">
+			<tr>
+				<td>
+					Фамилия
+				</td>
+				<td>
+					<input type="text" id="surname">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Имя
+				</td>
+				<td>
+					<input type="text" id="name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Отчество
+				</td>
+				<td>
+					<input type="text" id="middle_name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Класс
+				</td>
+				<td>
+					<select id="class_number_student">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Номер телефона
+				</td>
+				<td>
+					<input type="text" id="phone_student">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Адрес
+				</td>
+				<td>
+					<input type="text" id="address_student">
+				</td>
+			</tr>
+		</table>
+
+		<div id="add_student">
+			Дальше
+		</div>
+	</div>
+
+
+	<div id="window_add_teacher">
+		<div id="close_add_teacher">
+			<img src="img/cross.png" width="30px">
+		</div>
+		<h3 align="center">
+			Добавить учителя
+		</h3>
+
+		<table id="table_add_teacher" border="0">
+			<tr>
+				<td>
+					Фамилия
+				</td>
+				<td style="width: 280px;">
+					<input type="text" id="surname_teacher">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Имя
+				</td>
+				<td>
+					<input type="text" id="name_teacher">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Отчество
+				</td>
+				<td>
+					<input type="text" id="middle_name_teacher">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Предмет
+				</td>
+				<td id="td_subject_teacher">
+					<select id="subject_teacher">
+						<option>Мировая художественная культура (МХК)</option>
+						<option>Астрономия</option>
+						<option>Экология</option>
+						<option>Философия</option>
+						<option>Правоведение</option>
+						<option>Основы экономики</option>
+						<option>Естествознание</option>
+						<option>Химия</option>
+						<option>Физика</option>
+						<option>Геометрия</option>
+						<option>Алгебра</option>
+						<option>Черчение</option>
+						<option>Обществознание</option>
+						<option>Информатика</option>
+						<option>Биология</option>
+						<option>География</option>
+						<option>Технология</option>
+						<option>ОБЖ</option>
+						<option>Литература</option>
+						<option>История</option>
+						<option>Краеведение</option>
+						<option>Граждановедение</option>
+						<option>Иностранный язык</option>
+						<option>Физкультура</option>
+						<option>Русский язык</option>
+						<option>Изобразительное искусство</option>
+						<option>Музыка</option>
+						<option>Математика</option>
+					</select>
+					<a id="another_subject">(Другой)</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Классы
+				</td>
+				<td id="classes">
+					<select class="select" id="select_1">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+					</select>
+					<div class="add_class" id="1" count="1">
+						<img src="img/add.png" height="20px">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Номер телефона
+				</td>
+				<td>
+					<input type="text" id="phone_teacher">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					email
+				</td>
+				<td>
+					<input type="text" id="email_teacher">
+				</td>
+			</tr>
+		</table>
+
+		<div id="add_teacher">
+			Сохранить
+		</div>
+	</div>
+
+	<div id="window_add_parent">
+		<div id="close_add_parent">
+			<img src="img/cross.png" width="30px">
+		</div>
+		<h3 align="center">
+			Добавить родителя
+		</h3>
+
+		<table id="table_add_parent" border="0">
+			<tr>
+				<td style="width: 150px;">
+					Фамилия
+				</td>
+				<td>
+					<input type="text" id="surname_parent">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Имя
+				</td>
+				<td>
+					<input type="text" id="name_parent">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Отчество
+				</td>
+				<td>
+					<input type="text" id="middle_name_parent">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Ребенок
+				</td>
+				<td>
+					<select id="child"></select>
+				</td>
+			</tr>
+		</table>
+
+		<div id="add_parent">
+			Дальше
+		</div>
+	</div>
+
+
+	<div id="window_del_student">
+		<div id="close_del_student">
+			<img src="img/cross.png" width="30px">
+		</div>
+		<h3 align="center">
+			Удалить ученика
+		</h3>
+
+		<select id="students_for_del"></select>
+
+		<div id="del_student">
+			Удалить
+		</div>
+	</div>
+
+
+	<div id="window_del_teacher">
+		<div id="close_del_teacher">
+			<img src="img/cross.png" width="30px">
+		</div>
+		<h3 align="center">
+			Удалить учителя
+		</h3>
+
+		<select id="teachers_for_del"></select>
+
+		<div id="del_teacher">
+			Удалить
+		</div>
+	</div>
+
+	<div id="window_del_parent">
+		<div id="close_del_parent">
+			<img src="img/cross.png" width="30px">
+		</div>
+		<h3 align="center">
+			Удалить учителя
+		</h3>
+
+		<select id="parents_for_del"></select>
+
+		<div id="del_parent">
+			Удалить
+		</div>
+	</div>
+
+</body>
+</html>
