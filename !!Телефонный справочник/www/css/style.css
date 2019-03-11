@@ -1,0 +1,98 @@
+.main_list_table
+{
+	width: 100%;
+	margin-top: 30px;
+}
+
+#search_word
+{
+	margin: 50px 0px 0px 100px;
+	width: 300px;
+	border: 1px solid black;
+}
+
+.tr_list_table:hover, .tr_search_table:hover
+{
+	background-color: green;
+	opacity: 0.4;
+	cursor: pointer;
+	color: white;
+}
+
+.modal-dialog
+{
+	width: 90%;
+}
+
+input
+{
+	width: 100%;
+	border: 0px;
+}
+
+#div_load_search
+{
+	/*border: 1px solid black;*/
+	/*margin-bottom: 30px;*/
+	float: right;
+	margin-right: 750px;
+	margin-top: -55px;
+	/*margin: 0px auto;*/
+	/*position: absolute;*/
+	/*top: 100px;*/
+}
+
+.loading {
+	margin: 0 auto;
+	margin-bottom: -40px;
+	/*margin-top: 10px;*/
+  position: relative;
+  width: 0;
+  padding: 20px;  /* если задать в %, то будет рассчитываться от ширины родителя */
+  background:
+   linear-gradient(rgba(0,0,0,1) 30%, transparent 30%, transparent 70%, rgba(0,0,0,.4) 70%),
+   linear-gradient(to left, rgba(0,0,0,.2) 30%, transparent 30%, transparent 70%, rgba(0,0,0,.8) 70%);
+  background-repeat: no-repeat;
+  background-size: 10% 100%, 100% 10%;
+  background-position: 50% 0%, 0 50%;
+  -webkit-animation: loading .7s infinite steps(8);
+  animation: loading .7s infinite steps(8);
+}
+.loading:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+   linear-gradient(rgba(0,0,0,.1) 30%, transparent 30%, transparent 70%, rgba(0,0,0,.5) 70%),
+   linear-gradient(to left, rgba(0,0,0,.3) 30%, transparent 30%, transparent 70%, rgba(0,0,0,.9) 70%);
+  background-repeat: no-repeat;
+  background-size: 10% 100%, 100% 10%;
+  background-position: 50% 0%, 0 50%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@-webkit-keyframes loading {
+  100% {-webkit-transform: rotate(1turn);}
+}
+@keyframes loading {
+  100% {transform: rotate(1turn);}
+}
+
+#delete
+{
+	float: left;
+}
+
+#btn_add
+{
+	position: relative;
+	margin: 30px 50px;
+}
+
+#add_table tr td input
+{
+	font-weight: normal;
+}
