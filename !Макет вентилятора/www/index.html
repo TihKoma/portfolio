@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Приточная ВУ</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script language="javascript" src="js/script.js"></script>
+</head>
+<body>
+
+<table border="1" id="controlPanel">
+	<tr>
+		<td>
+			<h4 id="NAME">П1</h4>
+			<p id="SState_1">СИСТЕМА В НОРМЕ</p>
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<h5>РУЧНОЙ ЗАПУСК</h5>
+			<p>
+				пуск
+				<img src="img/stop.png" id="SS_1">
+				стоп
+				<!-- <div class="SS_1">
+				<img src="img/start.png">
+				</div> -->
+				<img src="img/vent_small2.png" id="FUN_1">
+			</p>
+		</td>
+	</tr>
+
+	<tr>
+		<td style="padding-bottom: -5px;">
+			<h5>ЗАПУСК ПО РАСПИСАНИЮ</h5>
+			<p>
+					<div class="time">
+						вкл. <br>
+						<input type="time" id="time_on">
+					</div>
+					<div class="time">
+						выкл. <br>
+						<input type="time" id="time_off">
+					</div> <br>
+					
+					<div id="activate">
+						<p style="margin: auto auto;">
+							Активировать
+						</p>
+					</div>
+					<!-- <input type="submit" value="Активировать"> -->
+			</p>
+			
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<h5>РЕЖИМ РАБОТЫ</h5>
+			<p style="margin-bottom: 5px;">
+				лето
+				<img src="img/stop.png" id="WS_1">
+				зима
+				<img src="img/winter.png" id="WS_IND">
+			</p>
+		</td>
+	</tr>
+
+	<tr>
+		<td style="padding-bottom: 10px;">
+			<h5 style="margin-bottom: 20px;">СКОРОСТЬ ВЕНТИЛЯТОРА</h5>
+			<div id="VEL_1"></div>
+			<!-- <input type="range" min="5" max="25" id="VEL_1" value="15" oninput="speed()"> -->
+			<input type="text" id="VEL_IND" value="50"> %
+		</td>
+	</tr>
+
+	<tr>
+		<td style="padding-bottom: 10px;">
+			<h5 style="margin-bottom: 20px;">ТЕМПЕРАТУРНЫЕ ЗНАЧЕНИЯ</h5>
+			Уставка
+			<div id="SetT1"></div>
+			<input type="text" id="SET_IND" value="25">
+			°С
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<p style="margin-bottom: 0;">
+				В канале
+				<!-- <input type="text" id="TE2"> <br> -->
+				<b id="TE2">26</b> °С <br>
+				Обратной воды
+				<b id="TE3">34</b> °С <br>
+				Наружная
+				<b id="TE1">52</b> °С
+				<!-- <input type="text" id="TE1"> -->
+			</p>
+		</td>
+	</tr>
+</table>
+
+<div id="container">
+	<table id="indicators">
+		<tr>
+			<td style="width: 92px;">
+				<div id="damper">
+					<h4 style="margin-bottom: 0;">
+						Заслонка
+					</h4>
+					<div id="damper_img"></div>
+				</div>
+			</td>
+
+			<td style="width: 60px;">
+				<div class="filter" style="margin-left: 5px;">
+					<h4 style="margin-bottom: 0;">
+						Фильтр
+					</h4>
+					<div class="filter_img" id="F11"></div>
+				</div>
+			</td>
+
+			<td style="width: 60px;">
+				<div class="filter" style="margin-left: -5px;">
+					<h4 style="margin-bottom: 0;">
+						Фильтр
+					</h4>
+					<div class="filter_img"></div>
+				</div>
+			</td>
+
+			<td style="width: 235px;">
+				<div class="filter">
+					<h4 style="margin-bottom: 0;">
+						Термостат
+					</h4>
+					<div id="THERM_IND"></div>
+				</div>
+			</td>
+			
+			<td>
+				<div class="filter" id="vent">
+					<h4 style="margin-bottom: 0;">
+						Вентилятор
+					</h4>
+					<p id="speed_vent">
+						Скорость
+						<b id="speed">50</b>%
+					</p>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+	<div id="INC_IND"></div>
+	<div id="F1"></div>
+	<div id="WARM_IND"></div>
+	<div id="COOL_IND"></div>
+	<div id="FUN_2">
+		<img src="img/vent_big.png" id="vent_big">
+	</div>
+	<div id="OUT_IND"></div>
+
+	<div id="PUMP_IND"></div>
+	<div id="PS1"></div>
+	<div id="PS2"></div>
+	<div id="Hott"></div>
+	<div id="Cold"></div>
+	<div id="HOTFLOW_IND"></div>
+	<div id="COLDFLOW_IND"></div>
+
+	<table id="crash">
+		<tr>
+			<td id="crash_vent"></td>
+			<td id="crash_filter"></td>
+			<td id="crash_freeze"></td>
+			<td id="crash_flap"></td>
+			<td style="width: 20px;"></td>
+			<td id="reset"></td>
+		</tr>
+	</table>
+
+	<div id="journal">
+		<div id="events" class="tabs"></div>
+		<div id="warning" class="tabs"></div>
+		<div id="activity_log" class="tabs"></div>
+		<div id="all" class="tabs"></div>
+		<table id="journal_table" border="0"></table>
+	</div>
+</div>
+
+<div id="start">
+	<h3 id="header_process">
+		Запуск установки
+	</h3>
+	<div id="process"></div>
+</div>
+
+</body>
+</html>

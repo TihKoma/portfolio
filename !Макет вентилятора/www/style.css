@@ -1,0 +1,530 @@
+﻿table td
+{
+	padding-left: 20px;
+}
+
+h5
+{
+	margin-bottom: 0;
+}
+
+#controlPanel
+{
+	width: 300px;
+	/*height: 600px;*/
+}
+
+#NAME, #SState_1
+{
+	text-align: center;
+	margin: 0;
+}
+
+#SState_1
+{
+	color: #0ACF00;
+	font-weight: bold;
+}
+
+#SS_1
+{
+	width: 55px;
+	height: 19px;
+}
+
+#SS_1, #FUN_1, #WS_1
+{
+	vertical-align: middle;
+}
+
+#SS_1, #WS_1
+{
+	cursor: pointer;
+}
+
+#FUN_1
+{
+	background-color: #4c4847;
+	border-radius: 40px;
+	margin-left: 20px;
+	border: 1px solid black;
+}
+
+/*input[type="text"]
+{
+	width: 30px;
+	height: 10px;
+}*/
+
+input[type="time"]
+{
+	/*width: 50px;*/
+	/*height: 10px;*/
+}
+
+#WS_IND
+{
+	vertical-align: middle;
+	margin-left: 30px;
+}
+
+#VEL_1
+{
+	width: 200px;
+	height: 15px;
+	float: left;
+	margin-top: 2px;
+}
+
+#VEL_IND
+{
+	margin-left: 25px;
+	width: 22px;
+	/*border: 1px solid black;*/
+}
+
+#SetT1
+{
+	width: 100px;
+	height: 10px;
+	/*border-radius: 5px;*/
+	/*border: 1px solid black;*/
+	/*float: left;*/
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+
+#SET_IND
+{
+	margin-left: 25px;
+	width: 22px;
+}
+
+#TE1
+{
+	margin-left: 52px;
+	vertical-align: middle;
+}
+
+#TE2
+{
+	margin-left: 60px;
+	vertical-align: middle;
+}
+
+#TE3
+{
+	margin-left: 15px;
+	vertical-align: middle;
+}
+
+#container
+{
+	width: 900px;
+	height: 550px;
+	margin-top: -705px;
+	margin-left: 325px;
+}
+
+#INC_IND
+{
+	background-image: url('img/damper_off.png');
+	width: 126px;
+	height: 124px;
+	float: left;
+	margin-left: -8px;
+}
+
+#indicators
+{
+	position: relative;
+	left: -8px;
+	width: 800px;
+}
+
+#damper_img
+{
+	background-image: url('img/damper_close.jpg');
+	width: 80px;
+	height: 19px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+#damper
+{
+	text-align: center;
+	width: 100px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+#F1
+{
+	background-image: url('img/filter.jpg');
+	width: 229px;
+	height: 124px;
+	float: left;
+}
+
+.filter
+{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.filter_img
+{
+	background-image: url('img/norm.jpg');
+	border: 1px solid black;
+	width: 80px;
+	height: 19px;
+	margin: 0 auto;
+}
+
+#WARM_IND
+{
+	background-image: url('img/blok_red.png');
+	width: 153px;
+	height: 332px;
+	float: left;
+}
+
+#COOL_IND
+{
+	background-image: url('img/cool_black.png');
+	width: 90px;
+	height: 330px;
+	float: left;
+}
+
+#FUN_2
+{
+	background-image: url('img/blok_fun.jpg');
+	width: 139px;
+	height: 124px;
+	float: left;
+	text-align: center;
+}
+
+#vent_big
+{
+	vertical-align: bottom;
+	border: 1px solid black;
+	margin-top: 5px;
+	background-color: #4c4847;
+	border-radius: 60px;
+	width: 111px;
+	height: 111px;
+}
+
+#OUT_IND
+{
+	background-image: none;
+	width: 62px;
+	height: 108px;
+	float: left;
+	/*border: 1px solid blue;*/
+	margin: 7px 15px;
+}
+
+#THERM_IND
+{
+	background-image: url('img/norm.jpg');
+	width: 80px;
+	height: 19px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+#PUMP_IND
+{
+	background-image: url('img/on.jpg');
+	width: 79px;
+	height: 19px;
+	position: relative;
+	top: 195px;
+	left: 270px;
+	border: 1px solid black;
+}
+
+#PS1, #PS2
+{
+	background-image: url('img/norm.jpg');
+	width: 80px;
+	height: 19px;
+	position: relative;
+	border: 1px solid black;
+}
+
+#PS1
+{
+	top: 172px;
+	left: 432px;
+}
+
+#PS2
+{
+	top: 150px;
+	left: 590px;
+}
+
+#Hott, #Cold
+{
+	background-image: url('img/open.jpg');
+	width: 77px;
+	height: 19px;
+	position: relative;
+	border: 1px solid black;
+}
+
+#Hott
+{
+	top: 187px;
+	left: 270px;
+}
+
+#Cold
+{
+	top: 165px;
+	left: 590px;
+}
+
+#HOTFLOW_IND
+{
+	background-image: url('img/hot_air.png');
+	width: 55px;
+	height: 28px;
+	position: relative;
+	top: 235px;
+	left: 367px;
+}
+
+#COLDFLOW_IND
+{
+	width: 56px;
+	height: 28px;
+	position: relative;
+	top: 207px;
+	left: 517px;
+}
+
+#activate
+{
+	display: inline-block;
+	border: 1px solid blue;
+	/*border-radius: 20px;*/
+	height: 20px;
+	width: 100px;
+	vertical-align: middle;
+	text-align: center;
+	background-color: #177bbb;
+	color: white;
+	margin-left: 5px;
+	cursor: pointer;
+	/*margin: 0 auto;*/
+}
+
+.time
+{
+	text-align: center; 
+	/*border: 1px solid black; */
+	width: 80px; 
+	float: left;
+	vertical-align: middle;
+}
+
+#crash
+{
+	width: 780px;
+	height: 19px;
+	position: relative;
+	top: 50px;
+	left: 125px;
+}
+
+#crash_vent, #crash_filter, #crash_freeze, #crash_flap
+{
+	width: 149px;
+	height: 19px;
+}
+
+#crash_vent
+{
+	background-image: url('img/crash_vent.jpg');
+}
+
+#crash_filter
+{
+	background-image: url('img/crash_filter.jpg');
+}
+
+#crash_freeze
+{
+	background-image: url('img/crash_freeze.jpg');
+}
+
+#crash_flap
+{
+	background-image: url('img/crash_flap.jpg');
+}
+
+#reset
+{
+	background-image: url('img/reset.jpg');
+	width: 64px;
+	height: 19px;
+}
+
+#crash_vent, #crash_filter, #crash_freeze, #crash_flap, #reset
+{
+	cursor: pointer;
+}
+
+#speed_vent
+{
+	margin-top: 0px;
+	height: 19px;
+	background-repeat: no-repeat;
+}
+
+#vent
+{
+	width: 100px;
+	margin-left: 0px;
+	margin-top: 7px;
+	text-align: center;
+	height: 70px;
+	border: 1px solid transparent;
+}
+
+.tabs
+{
+	width: 170px;
+	height: 20px;
+	float: left;
+	margin-left: 2px;
+	cursor: pointer;
+}
+
+#events
+{
+	background-image: url('img/events.jpg');
+	margin-left: 0px;
+}
+
+#warning
+{
+	background-image: url('img/warning.jpg');
+}
+
+#activity_log
+{
+	background-image: url('img/activity_log.jpg');
+}
+
+#all
+{
+	background-image: url('img/all_on.jpg');
+}
+
+#journal
+{
+	margin-top: 70px;
+	width: 900px;
+	height: 170px;
+}
+
+#journal_table
+{
+	width: 900px;
+	height: 160px;
+	border-collapse: collapse;
+	display: block;
+	overflow: scroll;
+}
+
+#journal_table tr td
+{
+	border: 1px solid black;
+}
+
+#first_str
+{
+	/*position: fixed;*/
+	/*background-color: white;*/
+}
+
+.menu
+{
+	text-align: center;
+	height: 30px;
+	padding: 0;
+	width: 150px;
+}
+
+.text_menu
+{
+	margin: 0;
+}
+
+#message
+{
+	width: 350px;
+}
+
+.cell
+{
+	height: 22px;
+	width: 150px;
+	padding: 0;
+	text-align: center;
+}
+
+.status
+{
+	vertical-align: middle;
+}
+
+#start
+{
+	position: absolute;
+	top: -1000px;
+	left: 35%;
+	width: 400px;
+	height: 135px;
+	border: 1px solid black;
+	background-color: black;
+	opacity: 0.9;
+}
+
+#process
+{
+	width: 293px;
+	height: 30px;
+	margin: auto;
+	margin-top: 30px;
+	background-color: grey;
+	border: 2px solid grey;
+}
+
+.brick
+{
+	float: left;
+	width: 20px;
+	height: 30px;
+	background-color: white;
+	margin-right: 1px;
+}
+#end
+{
+	margin-right: 0px;
+}
+
+#header_process
+{
+	color: white;
+	text-align: center;
+	margin-top: 20px;
+}
