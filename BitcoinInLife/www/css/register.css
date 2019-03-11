@@ -1,0 +1,84 @@
+p, a
+{
+	font-family: calibri;
+}
+#content
+{
+	/*border: 1px solid black;*/
+	width: 75%;
+	height: 700px;
+	margin: 50px auto;
+	/*background-color: white;*/
+}
+
+#register_table
+{
+	width: 100%;
+}
+
+#login_text
+{
+	margin-left: 30px;
+	margin-bottom: 0;
+}
+
+.input_text
+{
+	font-size: 26px;
+	margin-top: -4px;
+	margin-bottom: 0;
+	margin-left: 30px;
+	/*height: 20px;*/
+	/*border: 1px solid black;.*/
+	/*display: inline-block;*/
+	/*vertical-align: top;*/
+}
+
+.input
+{
+	float: left;
+	width: 500px;
+	height: 30px;
+	margin-right: 10px;
+	/*margin-top: 4px;*/
+}
+
+.asterics
+{
+	font-size: 30px;
+	color: red;
+	vertical-align: middle;
+}
+
+#code
+{
+	width: 280px;
+	float: left;
+	margin-left: 20px;
+	vertical-align: middle;
+}
+
+#reg_but
+{
+	color: white;
+	background-color: #0088FF;
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-top: 30px;
+	border: 1px solid blue;
+	width: 214px;
+	text-align: center;
+	height: 33px;
+	vertical-align: middle;
+	padding-top: 2px;
+	cursor: pointer;
+	font-size: 24px;
+	text-shadow: 2px 2px 2px black, 0 0 0 black;
+}
+
+#reg_but:hover
+{
+	border: 1px solid black;
+	color: #D4EAFF;
+	text-shadow: 2px 1px 1px black, 0 0 0 black;
+}

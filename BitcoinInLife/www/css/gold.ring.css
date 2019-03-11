@@ -1,0 +1,80 @@
+#link_gold_ring
+{
+	background-image: url('../img/bg.jpg');
+}
+
+#table_gold_ring
+{
+	width: 800px;
+	margin: 50px auto;
+	height: 40px;
+	font-family: calibri;
+	background-color: #e8e8e8;
+	border-radius: 20px;
+	border: 1px solid #4cabff;
+}
+
+#table_gold_ring tr td h2
+{
+	margin: 0;
+}
+
+#table_gold_ring tr td
+{
+	/*border: 0px;*/
+	/*padding: 0;*/
+	/*border-right: 1px solid black;*/
+	/*margin-left: -3px;*/
+}
+
+.option_but
+{
+	border-right: 1px solid #4cabff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.option_but:hover
+{
+	background-image: url("../img/bg.jpg");
+	color: #4bb4fd;
+}
+
+#link_gold_ring_10
+{
+	border-radius: 20px 0 0 20px;
+}
+
+#link_gold_ring_50
+{
+	border: 0;
+	border-radius: 0 20px 20px 0;
+}
+
+#button_10, #button_30, #button_50
+{
+	margin: 50px auto;
+	border: 1px solid #4cabff;
+	font-size: 24px;
+	font-style: calibri;
+	width: 162px;
+	text-align: center;
+	background-color: #e8e8e8;
+	border-radius: 20px;
+	height: 30px;
+	padding-top: 0px;
+	cursor: pointer;
+}
+
+#button_10:hover, #button_30:hover, #button_50:hover
+{
+	background-image: url("../img/bg.jpg");
+	color: #4bb4fd;
+}
+
+.levels
+{
+	font-family: calibri;
+	font-size: 19px;
+	margin-left: 100px;
+}

@@ -1,0 +1,49 @@
+#count
+{
+	display: block;
+	float: left;
+	margin-left: 160px;
+	margin-top: 30px;
+	width: 160px;
+	height: 30px;
+	font-size: 18px;
+	font-family: calibri;
+	text-align: center;
+}
+
+#info
+{
+	width: 800px;
+	height: 50px;
+	margin: 30px auto;
+	font-family: calibri;
+	font-size: 20px;
+	background-color: #EFE4D7;
+	padding-left: 40px;
+	border-radius: 20px;
+}
+
+#pay
+{
+	display: block;
+	float: left;
+	margin-left: 160px;
+	margin-top: 30px;
+	height: 34px;
+	width: 140px;
+	background-color: #e8e8e8;
+	border: 1px solid #4cabff;
+	text-align: center;
+	cursor: pointer;
+	font-family: calibri;
+	font-size: 22px;
+	border-radius: 20px;
+	padding-top: 0px;
+	outline: 0px;
+}
+
+#pay:hover
+{
+	background-image: url("../img/bg.jpg");
+	color: #4bb4fd;
+}

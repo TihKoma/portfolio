@@ -1,0 +1,51 @@
+#info
+{
+	width: 800px;
+	height: 90px;
+	padding: 15px;
+	font-family: calibri;
+	font-size: 20px;
+	margin: 0px auto;
+	background-color: #EFE4D7;
+	border-radius: 20px;
+}
+
+#table_qiwi
+{
+	width: 800px;
+	margin: 30px auto;
+	font-family: calibri;
+	font-size: 20px;
+}
+
+#qiwi, #cnt
+{
+	width: 400px;
+	height: 30px;
+	font-family: calibri;
+	font-size: 20px;
+	padding-left: 20px;
+	border-radius: 20px;
+	outline: 0;
+	border: 0px;
+}
+
+#submit
+{
+	text-align: center;
+	width: 210px;
+	height: 36px;
+	margin: 30px auto;
+	border: 1px solid #4cabff;
+	font-family: calibri;
+	font-size: 26px;
+	background-color: #e8e8e8;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+#submit:hover
+{
+	background-image: url("../img/bg.jpg");
+	color: #4bb4fd;
+}

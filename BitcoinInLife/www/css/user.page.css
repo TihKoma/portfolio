@@ -1,0 +1,41 @@
+#table_user
+{
+	width: 800px;
+	height: 300px;
+	margin: 0 auto;
+	font-size: 22px;
+	font-family: calibri;
+	margin-left: 100px;
+}
+
+#update
+{
+	font-family: calibri;
+	font-size: 22px;
+	color: black;
+	margin-left: 102px;
+	margin-top: 20px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+#update:hover
+{
+	text-decoration: underline;
+}
+
+#update_password
+{
+	font-family: calibri;
+	font-size: 22px;
+	color: black;
+	margin-left: 202px;
+	margin-top: 20px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+#update_password:hover
+{
+	text-decoration: underline;
+}

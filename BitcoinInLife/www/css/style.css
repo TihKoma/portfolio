@@ -1,0 +1,224 @@
+body
+{
+	/*min-height: 100%;*/
+	background-image: url("../img/bg.jpg");
+	margin: 0;
+	/*margin-left: 0;*/
+	/*margin-bottom: 0;*/
+}
+
+html, body
+{
+	height: 100%;
+}
+
+h1, a, h2
+{
+	font-family: calibri;
+}
+
+#page
+{
+	min-height: 100%;
+	position: relative;
+}
+
+#header
+{
+	width: 100%;
+	height: 110px;
+	/*border: 1px solid black;*/
+	border-bottom: 1px solid black;
+}
+
+#logo
+{
+	float: left;
+	margin-left: 6px;
+}
+
+#text_realty
+{
+	font-size: 44px;
+	color: #0088FF;
+	/*color: #175CD9;*/
+	text-shadow: 2px 2px 2px black, 0 0 0 black;
+	margin-top: -14px;
+	margin-left: 50px;
+	font-family: calibri;
+}
+
+#main_menu
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#main_menu li
+{
+	display: inline-block;
+	margin-top: 32px;
+	margin-left: 40px;
+	font-size: 23px;
+}
+
+#main_menu li a
+{
+	text-decoration: none;
+	color: #0088FF;
+	font-family: calibri;
+	/*text-shadow: 1px 1px 2px black, 0 0 0 black;*/
+}
+
+#autorization
+{
+	float: right;
+	/*border: 1px solid black;*/
+	margin-top: -60px;
+	margin-right: 30px;
+}
+
+#autorization a
+{
+	font-size: 22px;
+	text-decoration: none;
+	color: black;
+	/*color: #0088FF;*/
+	font-family: calibri;
+}
+
+#main_menu li a:hover
+{
+	text-decoration: underline;
+}
+
+#autorization a:hover
+{
+	text-decoration: underline;
+}
+
+#advert
+{
+	width: 325px;
+	height: 360px;
+	border: 1px solid black;
+	background-image: url("../img/bg_black.png");
+	margin-top: -150px;
+	margin-left: 70px;
+	position: absolute;
+	color: white;
+	text-align: center;
+	font-family: calibri;
+}
+
+#advert p
+{
+	font-size: 20px;
+	text-align: left;
+	margin-left: 36px;
+}
+
+#advert hr
+{
+	width: 300px;
+}
+
+#quote
+{
+	float: right;
+	width: 790px;
+	margin-top: 26px;
+}
+
+#quote h1
+{
+	font-family: calibri;
+	font-style: italic;
+	font-size: 28px;
+}
+
+#franclin
+{
+	display: inline-block;
+	float: right;
+	margin-right: 40px;
+	margin-top: -20px;
+}
+
+#description
+{
+	width: 100%;
+	height: 450px;
+	border: 1px solid black;
+	background-image: url("../img/bg_black.png");
+}
+
+#img_home
+{
+	/*margin-left: 60px;*/
+	margin: 6px;
+	margin-left: 150px;
+	float: left;
+	height: 438px;
+}
+
+#description_text
+{
+	width: 400px;
+	height: 438px;
+	float: left;
+	margin: 4px;
+	margin-left: 60px;
+	color: white;
+}
+
+#description_text p, #description_text ul li
+{
+	font-size: 20px;
+}
+
+#advantages
+{
+	width: 81%;
+	height: 300px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+#advantages tr td h2
+{
+	display: inline-block;
+	float: left;
+	margin-top: 2px;
+}
+
+#advantages p
+{
+	font-family: calibri;
+	font-size: 20px;
+}
+
+#advantages td
+{
+	vertical-align: top;
+}
+
+#footer
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background-image: url("../img/bg_black.png");
+}
+
+#footer p
+{
+	width: 100%;
+	text-align: center;
+	font-family: calibri;
+	font-size: 20px;
+	color: white;
+	margin-top: 38px;
+}

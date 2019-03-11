@@ -1,0 +1,49 @@
+.child
+{
+	width: 92px;
+}
+
+.login_user
+{
+	display: block;
+	max-width: 92px;
+	overflow: auto;
+	/*border: 1px solid black;*/
+	text-decoration: none;
+}
+
+.login_user:hover
+{
+	text-decoration: underline;
+}
+
+.div_parent a, #parent a, .child a
+{
+	font-family: times new roman;
+	font-weight: bold;
+	color: black;
+	font-size: 22px;
+}
+
+.login_parent
+{
+	margin: 0 auto;
+	font-size: 22px;
+	font-family: times new roman;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+
+.login_parent:hover
+{
+	text-decoration: underline;
+}
+
+.div_parent
+{
+	margin: 30px auto;
+	height: 160px;
+	width: 120px;
+	text-align: center;
+}

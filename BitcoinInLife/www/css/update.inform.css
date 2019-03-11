@@ -1,0 +1,50 @@
+.input_inform
+{
+	width: 400px;
+	height: 30px;
+	font-size: 20px;
+	border-radius: 20px;
+	padding-left: 20px;
+	outline: 0;
+	/*border: 1px solid grey;*/
+	border: 0px;
+}
+
+#save
+{
+	margin: 30px auto;
+	border: 1px solid #4cabff;
+	font-size: 24px;
+	font-style: calibri;
+	width: 124px;
+	text-align: center;
+	background-color: #e8e8e8;
+	border-radius: 20px;
+	height: 30px;
+	padding-top: 2px;
+	cursor: pointer;
+}
+
+#save:hover
+{
+	background-image: url("../img/bg.jpg");
+	color: #4bb4fd;
+}
+
+#back
+{
+	position: relative;
+	top: 20px;
+	left: 20px;
+	/*display: block;*/
+	float: left;
+	font-family: calibri;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+#back:hover
+{
+	text-decoration: underline;
+}

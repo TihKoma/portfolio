@@ -1,0 +1,43 @@
+#content
+{
+	border: 1px solid black;
+	margin: 130px auto;
+	height: 250px;
+	width: 600px;
+	background-image: url("../img/bg_white.png");
+	border-radius: 20px;
+}
+
+.inputs
+{
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+	height: 30px;
+	font-size: 20px;
+}
+
+#entrance
+{
+	color: white;
+	background-color: #0088FF;
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-top: 30px;
+	border: 1px solid blue;
+	width: 230px;
+	text-align: center;
+	height: 30px;
+	vertical-align: middle;
+	padding-top: 2px;
+	cursor: pointer;
+	font-size: 22px;
+	text-shadow: 2px 2px 2px black, 0 0 0 black;
+}
+
+#entrance:hover
+{
+	border: 1px solid black;
+	color: #D4EAFF;
+	text-shadow: 2px 1px 1px black, 0 0 0 black;
+}

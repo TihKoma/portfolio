@@ -1,0 +1,45 @@
+#parent
+{
+	margin: 30px auto;
+	/*border: 1px solid black;*/
+	height: 160px;
+	width: 120px;
+	text-align: center;
+}
+
+#table_content
+{
+	margin-top: 30px;
+	width: 100%;
+}
+
+.child
+{
+	margin: 30px auto;
+	/*border: 1px solid black;*/
+	height: 160px;
+	width: 120px;
+	text-align: center;
+}
+
+.login_user
+{
+	display: block;
+	max-width: 92px;
+	overflow: auto;
+	/*border: 1px solid black;*/
+	text-decoration: none;
+}
+
+.login_user:hover
+{
+	text-decoration: underline;
+}
+
+#parent a, .child a
+{
+	font-family: times new roman;
+	font-weight: bold;
+	color: black;
+	font-size: 22px;
+}

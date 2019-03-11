@@ -1,0 +1,23 @@
+.admin_menu
+{
+	/*overflow: hidden;*/
+	/*width: 220px;*/
+	/*max-width: 220px;*/
+	display: block;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+	/*text-align: center;*/
+	padding-left: 20px;
+	height: 40px;
+	padding-top: 10px;
+	/*background-color: grey;*/
+	cursor: pointer;
+	background-image: url("../img/bg_tables.png");
+	color: black;
+}
+
+.admin_menu:hover
+{
+	background-image: url("../img/bg.jpg");
+	/*color: white;*/
+}

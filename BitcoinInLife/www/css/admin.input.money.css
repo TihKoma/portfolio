@@ -1,0 +1,75 @@
+#table_input
+{
+	width: 860px;
+	height: 100px;
+	margin: 30px auto;
+	border-collapse: collapse;
+	font-family: calibri;
+	font-size: 18px;
+}
+
+#table_input tr td
+{
+	padding: 0px;
+}
+
+.headers
+{
+	font-size: 22px;
+	text-align: center;
+}
+
+.user_login
+{
+	margin-left: 50px;
+	color: black;
+	text-decoration: none;
+}
+
+.user_login:hover
+{
+	text-decoration: underline;
+}
+
+.count
+{
+	text-align: center;
+}
+
+.confirm
+{
+	background-color: #e8e8e8;
+	border: 1px solid #4cabff;
+	width: 116px;
+	height: 28px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 0;
+	font-size: 20px;
+	border-radius: 20px;
+	cursor: pointer;
+	padding-top: 2px;
+}
+
+.confirm:hover
+{
+	background-image: url("../img/bg.jpg");
+	color: #4bb4fd;
+}
+
+#delete
+{
+	position: relative;
+	top: 54px;
+	left: 50px;
+	color: black;
+	font-family: calibri;
+	font-size: 22px;
+	cursor: pointer;
+	width: 80px;
+}
+
+#delete:hover
+{
+	text-decoration: underline;
+}
