@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<script src="../../js/jquery-1.11.0.js"></script>
+<head>
+	<title></title>
+	<script>
+    	// window.onbeforeunload=function() {
+     //                  // alert("unload");
+     //                  // console.log('ok');
+     //                  // var str = "не надо";
+     //                  return 'qwe';
+     //    };
+    $(document).mousemove(function(e) {
+
+		if(e.pageY <= 3)
+		{
+
+		// Launch MODAL BOX
+		alert("ok");
+		window.close();
+		// $('#exit_content').modal({onOpen: modalOpen, onClose: simplemodal_close});
+		}
+
+	});
+	</script>
+	<script language="javascript" src="bignumber.js"></script>
+	
+</head>
+<body onunload="alert('Уже уходишь?')">
+
+<script type="text/javascript">
+//<![CDATA[
+
+var a = new BigNumber("123456789012345678901234567890123456789"),
+b = "999999999999999999999999999.9999999999999999999999",
+c = new BigNumber("10"),
+d = new BigNumber("-2"),
+PI = new BigNumber(355, 100, BigNumber.ROUND_HALF_UP).divide(113);
+
+var x = new BigNumber("1000000000000000000000000");
+var y = new BigNumber("100000000000000000000000");
+alert(x.divide(y));
+
+// document.write(
+// 	"<strong>10 ^ -2 = </strong>" + c.pow(d) + "<br />",
+// 	"<strong>PI constant (using precision = 100, mode = ROUND_HALF_UP) = </strong>" + PI + "<br />",
+// 	"<strong>" + a + " * " + b + " = </strong>" + a.multiply(b)
+// );
+
+//]]>
+</script>
+
+</body>
+</html>

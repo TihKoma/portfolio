@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Комбинаторный калькулятор "CALCULUS"</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <script language="javascript" src="js/BigInt.js"></script> -->
+	<script src="js/jquery-1.11.0.js"></script>
+	<script language="javascript" src="js/bignumber.js"></script>
+	<script language="javascript" src="js/index.js"></script>
+</head>
+<body>
+
+	<div id="window" align="center">
+		<div id="close">
+			<img src="img/cross.png" width="30px">
+		</div>
+		<h4>
+			МОСКОВСКИЙ АВИАЦИОННЫЙ ИНСТИТУТ <br>
+			(НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ) <br>
+			ФАКУЛЬТЕТ "СИСТЕМЫ УПРАВЛЕНИЯ, ИНФОРМАТИКА И ЭЛЕКТРОЭНЕРГЕТИКА"<br>
+			КАФЕДРА "ИНФОРМАЦИОННЫЕ СИСТЕМЫ И ТЕХНОЛОГИИ"
+		</h4>
+		<br>
+		<br>
+		<h2 align="center">
+			Комбинаторный калькулятор "CALCULUS"
+		</h2>
+
+		<p align="right" id="text">
+			<b>Выполнил: Комашинский Тихон Владимирович</b><br>
+			<b>Группа: М30-121Б</b><br>
+		</p>
+
+		<b id="date">Москва, апрель 2017.</b>
+
+	</div>
+
+	<div id="main">
+		<h2 align="center">
+			Комбинаторный калькулятор "CALCULUS"
+		</h2>
+
+		<table border="0" id="table_content">
+			<tr>
+				<td width="330px">
+					<p>
+						Вычислить:
+					</p>
+				</td>
+				<td>
+					<select id="system" onchange="swat_system()">
+						<option>Факториал</option>
+						<option>Суперфакториал</option>
+						<option>Гиперфакториал</option>
+						<option>Примориал</option>
+						<option>Убывающий факториал</option>
+						<option>Возрастающий факториал</option>
+						<option>Размещения с повторениями</option>
+						<option>Размещения без повторений</option>
+						<option>Перестановки без повторений</option>
+						<option>Сочетания без повторений</option>
+						<option>Сочетания с повторениями</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<p>
+						Формула:
+					</p>
+				</td>
+				<td id="formula">
+					<p>
+						n!=1*2*...*n
+					</p>
+				</td>
+			</tr>
+
+			<tr id="str_before">
+				<td>
+					<p id="num">
+						Число:
+					</p>
+				</td>
+				<td id="inputs">
+					<input id="number" class="fraction" type="text"><br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td style="text-align: center; height: 50px;">
+					<b>
+						Результат:
+					</b>
+				</td>
+				<td style="text-align: left; max-width: 400px;">
+					<b id="res"></b>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="translate">
+						Выполнить
+					</div>
+				</td>
+				<td>
+					<div id="save" style="height: 44px;">
+						Сохранить текущую сессию и выйти
+					</div>
+				</td>
+			</tr>
+		</table>
+		<p id="qwe"></p>
+
+		<div id="about">
+			<a href="about.html">О программе</a>
+		</div>
+	</div>
+
+
+	<div id="end"></div>
+	<table id="end_content">
+		<tr>
+			<td colspan="3">
+				<h2>Вы, действительно, хотите завершить работу?</h2>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="save_and_exit" class="control_panel">
+					Сохранить и выйти
+				</div>
+			</td>
+			<td>
+				<div id="exit" class="control_panel">
+					Выйти
+				</div>
+			</td>
+			<td>
+				<div id="cancel" class="control_panel">
+					Отмена
+				</div>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
