@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Конвертер римско-арабских чисел "AROMA"</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script language="javascript" src="js/index.js"></script>
+</head>
+<body>
+
+	<div id="window" align="center">
+		<div id="close">
+			<img src="img/cross.png" width="30px">
+		</div>
+		<h3>
+			МОСКОВСКИЙ АВИАЦИОННЫЙ ИНСТИТУТ <br>
+			(НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ) <br>
+			КАФЕДРА 308
+		</h3>
+		<br>
+		<br>
+		<h2 align="center">
+			Конвертер римско-арабских чисел "AROMA"
+		</h2>
+
+		<p align="right" id="text">
+			<b>Выполнил: Комашинский Тихон Владимирович</b><br>
+			<b>Группа: М30-121Б</b><br>
+		</p>
+
+		<b id="date">Москва, февраль 2017.</b>
+
+	</div>
+
+	<div id="main">
+		<h2 align="center">
+			Конвертер римско-арабских чисел "AROMA"
+		</h2>
+
+		<table border="0" id="table_content">
+			<tr>
+				<td width="330px">
+					<p>
+						Перевести число
+					</p>
+				</td>
+				<td>
+					<select id="system" onchange="swat_system()">
+						<option>из римской системы счисления в арабскую</option>
+						<option>из арабской системы счисления в римскую</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>
+						Число(от 0 до 4000):
+					</p>
+				</td>
+				<td>
+					<input id="number" type="text" placeholder="Например: MCMXCVIII">
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center; height: 50px;">
+					<b>
+						Результат:
+					</b>
+				</td>
+				<td style="text-align: center;">
+					<b id="res"></b>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="translate">
+						Выполнить
+					</div>
+				</td>
+				<td>
+					<div id="save">
+						Сохранить
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<div id="about">
+			<a href="about.html">О программе</a>
+		</div>
+	</div>
+
+</body>
+</html>

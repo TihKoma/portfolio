@@ -1,0 +1,141 @@
+body
+{
+	background-image: url('img/bg.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+#window
+{
+	border: 1px solid black;
+	width: 700px;
+	height: 400px;
+	/*margin: auto;*/
+	background-color: white;
+	border-radius: 10px;
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	/*margin-top: -1000px;*/
+	position: absolute;
+	right: 50%;
+	left: 50%;
+	margin-left: -350px;
+	top: 125px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	opacity: 0.8;
+}
+
+#close
+{
+	float: right;
+	margin-top: 3px;
+	margin-right: 2px;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+#text
+{
+	position: relative;
+	bottom: -90px;
+	right: 20px;
+}
+
+#date
+{
+	position: relative;
+	bottom: -110px;
+}
+
+#main
+{
+	border: 1px solid black;
+	width: 900px;
+	height: 450px;
+	/*margin: auto;*/
+	background-color: white;
+	border-radius: 10px;
+	/*position: absolute;*/
+	/*top: 0px;*/
+	/*right: 300px;*/
+	/*left: 50%;*/
+	/*text-align: center;*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -1000px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	/*opacity: 0.9;*/
+}
+
+/*#p_perevod
+{
+	margin-top: 40px;
+	margin-left: 50px;
+}
+
+#p_perevod, select, input
+{
+	font-size: 19px;
+}*/
+
+#table_content p, select, input, b
+{
+	font-size: 19px;
+}
+
+#table_content
+{
+	margin-left: 70px;
+	margin-top: 30px;
+	width: 750px;
+}
+
+#translate, #save
+{
+	color: white;
+	background-color: #0672FF;
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-top: 30px;
+	/*position: relative;*/
+	/*top: 100px;*/
+	border: 1px solid blue;
+	width: 180px;
+	text-align: center;
+	height: 26px;
+	vertical-align: middle;
+	padding-top: 2px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+#translate:hover, #save:hover
+{
+	border: 1px solid black;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#table_content b
+{
+	/*margin-top: 40px;*/
+	vertical-align: bottom;
+	font-size: 20px;
+}
+
+#main a
+{
+	color: blue;
+	text-decoration: none;
+	font-size: 19px;
+	color: black;
+}
+
+#main a:hover
+{
+	text-decoration: underline;
+}
+
+#about
+{
+	margin-top: 70px;
+	margin-left: 40px;
+}
