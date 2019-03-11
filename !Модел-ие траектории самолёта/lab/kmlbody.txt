@@ -1,0 +1,9 @@
+
+          <heading>0</heading>
+          <tilt>85</tilt>
+          <range>20000</range>
+        </LookAt>
+        <styleUrl>#RedLine5</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <altitudeMode>absolute</altitudeMode>
