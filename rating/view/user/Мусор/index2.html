@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/style.slider.css">
+	<!-- <link rel='stylesheet prefetch' href='https://unpkg.com/flickity@2/dist/flickity.min.css'> -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<title>Fullscreen Slit Slider with CSS3 and jQuery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="description" content="Fullscreen Slit Slider with CSS3 and jQuery" />
+	<meta name="keywords" content="slit slider, plugin, css3, transitions, jquery, fullscreen, autoplay" />
+	<meta name="author" content="Codrops" />
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+	<noscript>
+		<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+	</noscript>
+
+
+	<!-- <script type="text/javascript" src="js/jquery-3.4.1.js"></script> -->
+
+</head>
+<body>
+
+	<div class="container-fluid row" id="header1">
+		<div class="col-md-6">
+			<p>
+				<Актион> Право
+			</p>
+		</div>
+
+		<div class="col-md-6">
+			<div style="float: right;">
+				<a href="#">
+					Версия для коммерческих организаций
+				</a>
+
+				<a href="#">
+					О системе
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid row" id="header2">
+		<div class="col-md-2"></div>
+		
+		<div class="col-md-4">
+			<img src="img/logo.png">
+		</div>
+
+		<div class="col-md-4" id="div_main_menu">
+			<ul>
+				<li>
+					<a href="#">
+						Главная
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						Рейтинг
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						Как использовать
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						Контакты
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="col-md-2"></div>
+	</div>
+
+	<div class="container-fluid row" id="purple_block">
+		<div class="col-md-3"></div>
+
+		<div class="col-md-3">
+			<div id="container_count">
+				<p>
+					Юристов в рейтинге
+				</p>
+
+				<div>
+					856
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3" id="container_tagline">
+			<p>
+				Слоган рейтинга - быстрый старт рядом счетчик, сколько юристов уже в деле
+			</p>
+
+			<div>
+				Принять участие
+			</div>
+		</div>
+
+		<div class="col-md-3"></div>
+	</div>
+
+	<div class="container-fluid row" id="importance">
+		<div class="col-md-2"></div>
+
+		<div class="col-md-8">
+			<h1>
+				ПОЧЕМУ ВАЖНО УЧАСТВОВАТЬ
+			</h1>
+
+			<p>
+				Здесь должно быть описание почему так важно участвовать в этом проекте рейнтинга юристов. текст текст текст текст текст текст текст текст текст текст текст текст текст
+			</p>
+		</div>
+
+		<div class="col-md-2"></div>
+	</div>
+
+	<!-- <div class="container-fluid row">
+		<div class="col-md-2"></div>
+
+		<div class="col-md-8 row" id="container_slider">
+			<div class="col-md-8">
+				<i>
+					«Отзыв известного юриста, вернее локоничная цитата про то, как прекрасен рейнтинг журнала Юриста компании»
+				</i>
+
+				<p>
+					<b>АЛЕКСЕЙ КОСТОВАРОВ</b>
+					Советник практики разрешения споров и банкротства АБ «Линия права»
+				</p>
+			</div>
+
+			<div class="col-md-4">
+				<img src="img/main.person.png" style="margin-top: 20px;">
+			</div>
+		</div>
+
+		<div class="col-md-2"></div>
+	</div> -->
+
+	
+
+
+
+	<div class="container-fluid row" style="margin-top: 50px;">
+		<div class="col-md-2"></div>
+
+        <div id="slider" class="sl-slider-wrapper col-md-8">
+			<div class="sl-slider ">
+			
+				<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+					<div class="sl-slide-inner">
+						<table id="table_slider" class="table table-fluid" border="0" style="width: 100%;">
+				
+							<tr>
+								<td width="850px">
+									<div style="width: 360px; display: block; float: left;">
+										<div>
+											<i>
+												«Отзыв известного юриста, вернее локоничная цитата про то, как прекрасен рейнтинг журнала Юриста компании»
+											</i>
+
+											<hr>
+										</div>
+									</div>
+								</td>
+
+								<td rowspan="2" style="height: 320px;">
+									<div style="height: 100%;">
+										<img src="img/main.person.png" height="300px" class="slider-img">
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<div>
+										<p style="color: black;">
+											<b>АЛЕКСЕЙ КОСТОВАРОВ</b> <br>
+											Советник практики разрешения споров <br>
+											и банкротства АБ «Линия права»
+										</p>
+									</div>
+								</td>
+							</tr>
+						
+						</table>
+					</div>
+				</div>
+				
+				<div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+					<div class="sl-slide-inner">
+						<!-- <div class="deco" data-icon="q"></div> -->
+						<img src="images/1.jpg">
+						<h2>Hello dear fiend</h2>
+						<blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
+					</div>
+				</div>
+				
+				<div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+					<div class="sl-slide-inner">
+						<table id="table_slider" class="table table-fluid" border="0" style="width: 100%;">
+				
+							<tr>
+								<td width="850px">
+									<div style="width: 360px; display: block; float: left;">
+										<div>
+											<h2>
+												<i>
+													«Отзыв известного юриста, вернее локоничная цитата про то, как прекрасен рейнтинг журнала Юриста компании»
+												</i>
+											</h2>
+
+											<hr>
+										</div>
+									</div>
+								</td>
+
+								<td rowspan="2" style="height: 320px;">
+									<div style="height: 100%;">
+										<img src="img/main.person.png" height="300px" class="slider-img">
+									</div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<div>
+										<blockquote>
+											<p style="color: black;">
+												<b>АЛЕКСЕЙ КОСТОВАРОВ</b> <br>
+												Советник практики разрешения споров <br>
+												и банкротства АБ «Линия права»
+											</p>
+										</blockquote>
+									</div>
+								</td>
+							</tr>
+						
+						</table>
+					</div>
+				</div>
+				
+				<div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+					<div class="sl-slide-inner">
+						<div class="deco" data-icon="I"></div>
+						<h2>Donna nobis pacem</h2>
+						<blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>
+					</div>
+				</div>
+				
+				<div class="sl-slide bg-5" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+					<div class="sl-slide-inner">
+						<div class="deco" data-icon="t"></div>
+						<h2>Acta Non Verba</h2>
+						<blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>
+					</div>
+				</div>
+			</div><!-- /sl-slider -->
+			
+			<nav id="nav-arrows" class="nav-arrows">
+				<span class="nav-arrow-prev">Previous</span>
+				<span class="nav-arrow-next">Next</span>
+			</nav>
+
+			<nav id="nav-dots" class="nav-dots">
+				<span class="nav-dot-current"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</nav>
+
+		</div><!-- /slider-wrapper -->
+
+		<div class="col-md-2"></div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="container-fluid row" style="padding: 0;">
+		<div class="col-md-12" id="line"></div>
+	</div>
+
+	<div class="container-fluid row">
+		<div class="col-md-2"></div>
+
+		<div class="col-md-8" id="container_group">
+			<h1>
+				Заголовок
+			</h1>
+
+			<p>
+				Выберите интересующую вас группу:
+			</p>
+
+			<div class="row">
+				<div class="col-md-1"></div>
+
+				<div class="col-md-2">
+					<span class="btn_group btn_group_selected">
+						<b>
+							Полный рейтинг
+						</b>
+					</span>
+				</div>
+
+				<div class="col-md-2">
+					<span class="btn_group">
+						<b>
+							Начинающие
+						</b>
+					</span>
+				</div>
+
+				<div class="col-md-2">
+					<span class="btn_group" style="width: 180px;">
+						<b>
+							Руководители со стажем
+						</b>
+					</span>
+				</div>
+
+				<div class="col-md-2">
+					<span class="btn_group">
+						<b>
+							Судебные юристы
+						</b>
+					</span>
+				</div>
+
+				<div class="col-md-2">
+					<span class="btn_group">
+						<b>
+							Договорники
+						</b>
+					</span>
+				</div>
+
+				<div class="col-md-1"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12" id="div_my_position">
+					<span id="link_my_position">
+						Посмотреть мое место в Рейтинге
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-2"></div>
+	</div>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-1"></div>
+
+			<div class="col-md-10" id="first_tr">
+				
+				<div class="row">
+					<div class="col-md-2 first_tr_value">
+						МЕСТО
+					</div>
+
+					<div class="col-md-8 first_tr_value">
+						УЧАСТНИК
+					</div>
+
+					<div class="col-md-1 first_tr_value" id="profile_jurist">
+						Карта <br> юриста
+					</div>
+
+					<div class="col-md-1 first_tr_value">
+						БАЛЛЫ
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-md-1"></div>
+		</div>
+	</div>
+
+
+
+
+	<!-- <div class="container demo-1"> -->
+		
+			
+		
+
+
+	
+
+
+	<!-- <script src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js'></script> -->
+	<!-- <script  src="js/slider.js"></script> -->
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+		<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ),
+						$nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':last' ).on( 'click', function() {
+
+								slitslider.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':first' ).on( 'click', function() {
+								
+								slitslider.previous();
+								return false;
+
+							} );
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+				/*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+			
+			});
+		</script>
+
+</body>
+</html>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

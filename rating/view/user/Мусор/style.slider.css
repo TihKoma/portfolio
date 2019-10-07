@@ -1,0 +1,165 @@
+.slide--parent {
+  /*max-width: 1100px;*/
+  margin: auto;
+  overflow: hidden;
+}
+
+p {
+  line-height: 1.8;
+}
+
+h1 {
+  letter-spacing: 10px;
+  color: #343434;
+  margin: 0;
+}
+
+small {
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  display: inline-block;
+  color: #999;
+  position: relative;
+  padding-left: 3em;
+}
+small:after {
+  content: "";
+  position: absolute;
+  left: -0em;
+  top: 50%;
+  height: 4px;
+  width: 2.4em;
+  background: red;
+  transform: translateY(-50%);
+}
+
+.parent--el {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+.parent--el .two--col {
+  display: flex;
+  align-items: center;
+}
+
+figure {
+  margin: 0;
+}
+
+.is-item {
+  width: 60%;
+}
+.is-item.has--img {
+  width: 40%;
+}
+
+.the-img {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.the-img img {
+  width: 100%;
+}
+
+.is-item--inner {
+  padding: 0em 3em;
+}
+
+hr {
+  margin: 0.5em 0em;
+  height: 4px;
+  background: #eee;
+  border: none;
+}
+
+.the-img {
+  overflow: hidden;
+}
+.the-img img {
+  position: relative;
+  transform: translateX(100%);
+  transition: all 600ms ease;
+}
+
+.is-item--inner p {
+  transform: translateY(15px);
+  position: relative;
+  opacity: 0;
+  transition: all 400ms ease;
+}
+
+h1 {
+  overflow: hidden;
+}
+h1 span {
+  transform: translateY(100%);
+  position: relative;
+  transition: all 500ms ease;
+  display: inline-block;
+}
+
+hr {
+  width: 0;
+  max-width: 8em;
+  transition: all 2500ms ease;
+}
+
+small {
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all 100ms ease;
+}
+small:after {
+  width: 0;
+  max-width: 2.4em;
+  transition: all 1500ms ease;
+}
+
+.parent--el.is-selected .the-img {
+  overflow: hidden;
+}
+.parent--el.is-selected .the-img img {
+  position: relative;
+  transform: translateX(0%);
+  transition-delay: 500ms;
+}
+.parent--el.is-selected .is-item--inner p {
+  transform: translateY(0px);
+  transition-delay: 500ms;
+  position: relative;
+  opacity: 1;
+}
+.parent--el.is-selected .is-item--inner p:nth-of-type(2) {
+  color: red;
+  transition-delay: 700ms;
+}
+.parent--el.is-selected .is-item--inner p:nth-of-type(3) {
+  transition-delay: 900ms;
+}
+.parent--el.is-selected h1 {
+  overflow: hidden;
+}
+.parent--el.is-selected h1 span {
+  transform: translateY(0%);
+  position: relative;
+  transition-delay: 400ms;
+  display: inline-block;
+}
+.parent--el.is-selected hr {
+  width: 100%;
+  max-width: 8em;
+  transition-delay: 500ms;
+}
+.parent--el.is-selected small {
+  transform: translateY(0px);
+  opacity: 1;
+  transition-delay: 400ms;
+}
+.parent--el.is-selected small:after {
+  width: 100%;
+  transition-delay: 600ms;
+  max-width: 2.4em;
+}
